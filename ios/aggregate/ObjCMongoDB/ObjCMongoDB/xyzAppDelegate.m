@@ -1,42 +1,21 @@
 //
 //  xyzAppDelegate.m
-//  aggregate
+//  ObjCMongoDB
 //
-//  Created by Kelsey Wong on 7/17/14.
+//  Created by Kelsey Wong on 7/21/14.
 //  Copyright (c) 2014 Gilt. All rights reserved.
 //
 
 #import "xyzAppDelegate.h"
 
-#import "ObjCMongoDB.h"
-
 @implementation xyzAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    // self.window.backgroundColor = [UIColor whiteColor];
-    // [self.window makeKeyAndVisible];
-    
-    NSArray *keys = [NSArray arrayWithObjects:@"name", @"brand", @"price", @"image", @"url", nil];
-    
-    //set up database connection
-    NSError *error = nil;
-    MongoConnection *dbConn = [MongoConnection connectionForServer:@"127.0.0.1" error:&error];
-    MongoDBCollection *collection = [dbConn collectionWithName:@"gilt.products2"];
-    
-    
-    //fetching data from mongo
-    //trying to fetch all objects from collection
-    BSONDocument *resultDoc = [collection findAllWithError:&error];
-    NSArray *allclothes = [collection findAllWithError:&error];
-    for (BSONDocument *resultDoc in allclothes){
-        NSDictionary *result = [BSONDecoder decodeDictionaryWithDocument:resultDoc];
-        NSLog(@"fetch result: %@", result);
-    }
-    
-    
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
