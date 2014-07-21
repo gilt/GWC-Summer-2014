@@ -22,6 +22,12 @@
 		5A0EA422197840BE007353EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0EA421197840BE007353EF /* Main.storyboard */; };
 		5AD5235E197851E800DCA331 /* tops.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5AD5235D197851E800DCA331 /* tops.jpg */; };
 		5AD52360197856B600DCA331 /* dresses.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5AD5235F197856B600DCA331 /* dresses.jpg */; };
+		5AD5236219785E1000DCA331 /* skirts.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5AD5236119785E1000DCA331 /* skirts.jpg */; };
+		5AD52364197964F700DCA331 /* pants.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5AD52363197964F700DCA331 /* pants.jpg */; };
+		5AD5236619796B2700DCA331 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AD5236519796B2700DCA331 /* settings.png */; };
+		5AD5236819796D2F00DCA331 /* hearts.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AD5236719796D2F00DCA331 /* hearts.png */; };
+		5AD5236E19797E6B00DCA331 /* viewall.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AD5236D19797E6B00DCA331 /* viewall.png */; };
+		5AD523701979840500DCA331 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 5AD5236F1979840500DCA331 /* home.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +60,12 @@
 		5A0EA421197840BE007353EF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		5AD5235D197851E800DCA331 /* tops.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tops.jpg; sourceTree = SOURCE_ROOT; };
 		5AD5235F197856B600DCA331 /* dresses.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dresses.jpg; sourceTree = SOURCE_ROOT; };
+		5AD5236119785E1000DCA331 /* skirts.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = skirts.jpg; sourceTree = SOURCE_ROOT; };
+		5AD52363197964F700DCA331 /* pants.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pants.jpg; sourceTree = SOURCE_ROOT; };
+		5AD5236519796B2700DCA331 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = SOURCE_ROOT; };
+		5AD5236719796D2F00DCA331 /* hearts.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hearts.png; sourceTree = SOURCE_ROOT; };
+		5AD5236D19797E6B00DCA331 /* viewall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = viewall.png; path = ../viewall.png; sourceTree = "<group>"; };
+		5AD5236F1979840500DCA331 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +128,12 @@
 				5A0EA40119782F64007353EF /* xyzAppDelegate.h */,
 				5A0EA40219782F64007353EF /* xyzAppDelegate.m */,
 				5A0EA421197840BE007353EF /* Main.storyboard */,
+				5AD5236F1979840500DCA331 /* home.png */,
+				5AD5236D19797E6B00DCA331 /* viewall.png */,
+				5AD5236719796D2F00DCA331 /* hearts.png */,
+				5AD5236519796B2700DCA331 /* settings.png */,
+				5AD52363197964F700DCA331 /* pants.jpg */,
+				5AD5236119785E1000DCA331 /* skirts.jpg */,
 				5AD5235F197856B600DCA331 /* dresses.jpg */,
 				5AD5235D197851E800DCA331 /* tops.jpg */,
 				5A0EA40419782F64007353EF /* Images.xcassets */,
@@ -229,11 +247,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AD5236619796B2700DCA331 /* settings.png in Resources */,
 				5A0EA422197840BE007353EF /* Main.storyboard in Resources */,
+				5AD523701979840500DCA331 /* home.png in Resources */,
 				5AD5235E197851E800DCA331 /* tops.jpg in Resources */,
 				5A0EA3FD19782F64007353EF /* InfoPlist.strings in Resources */,
+				5AD5236219785E1000DCA331 /* skirts.jpg in Resources */,
+				5AD52364197964F700DCA331 /* pants.jpg in Resources */,
+				5AD5236E19797E6B00DCA331 /* viewall.png in Resources */,
 				5AD52360197856B600DCA331 /* dresses.jpg in Resources */,
 				5A0EA40519782F64007353EF /* Images.xcassets in Resources */,
+				5AD5236819796D2F00DCA331 /* hearts.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
