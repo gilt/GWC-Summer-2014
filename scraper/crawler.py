@@ -26,7 +26,7 @@ class ProductParser:
 		test2 = db.test2
 		newP = {'image': self.image, 'name': self.productName, 'brand': self.brand, 'purchaseUrl': self.purchaseUrl, 'price': self.price}
 		print newP
-		products2.insert(newP)
+		#products2.insert(newP)
 		
 	def parse(self, soup, url):
 		self.image = self.findImageLink(soup);
@@ -85,6 +85,8 @@ class Crawler:
 	
 def removeSymbols(string):
 	string = string.strip(u'\u00ae')
+	string = string.strip(u'\r\n\t\t\t\t\t\t\t\t\t\t')
+	string = string.strip(u'\xa0\xa0\xa0\xa0\xa0')
 	string = string.strip(u'\u2122')
 	string = string.strip(u'\u00a9')
 	return string
