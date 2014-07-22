@@ -3,6 +3,7 @@ import urllib2
 import sys
 #import lxml
 sys.path.append("/Users/fcolombo/Documents/gilt");
+from urlparse import urljoin
 
 import defaultparser
 import crawler
@@ -12,22 +13,27 @@ import crawler
 class LuluCrawler:
 	def getProductParser(self):
 		def findBrand(soup):
+			brandTag = soup.find('p', class_="brand")
+			if brandTag is not None: 
+				brand = brandTag.text 
+				return brand 
 			return "Lulus"
 
 		def findPrice(soup):
-			priceTag = soup.find('span', class_="current-price")
+			priceTag = soup.find('span', class_="sale")
 			if priceTag is not None:
 				price = priceTag.text
 				return price
 
 		def findProductName(soup):
-			h = soup.find('h1', class_="product-name")
-			name = h.text
-			print name
-			return crawler.removeSymbols(name)
+			h = soup.find('h1', class_="product-title")
+			if h is not None:
+				name = h.text
+				print name
+				return crawler.removeSymbols(name)
 
 		def findImageLink(soup):
-			thumbnail = soup.find("img", class_="category-item-thumb")
+			thumbnail = soup.find("img", class_="zoom_large")
 			if thumbnail is not None:
 				image = thumbnail['src']
 				return image
@@ -50,8 +56,7 @@ class LuluCrawler:
 					end = next.find('a')
 					if end is not None:
 						url = end['href']
-						print "Found product url", url
-						urls.append(url)
+						urls.append(urljoin(base_url,url))
 			print urls
 			return urls
 
@@ -70,4 +75,4 @@ def main():
 	crawler = LuluCrawler()
 	crawler.crawl()
 
-main()
+#main()
