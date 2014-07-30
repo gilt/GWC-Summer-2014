@@ -1,0 +1,925 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06EABD2315804723A4D5BE6D /* BSONTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 333B3423CF944E3D9EE4B372 /* BSONTypes.h */; };
+		09D1995A2AE34944A22320CB /* MongoPredicate.m in Sources */ = {isa = PBXBuildFile; fileRef = 238BC1D3511A47B0956E2ADA /* MongoPredicate.m */; };
+		0CF8F189FF5D4A43B034290E /* libPods-aggregate-mongo-c-driver.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146A6F7F901E40B085175E4F /* libPods-aggregate-mongo-c-driver.a */; };
+		113547DB3FB74570997B5795 /* ObjCMongoDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 26CD54109F0940E99F3C64E3 /* ObjCMongoDB.h */; };
+		16C78D09F71F4E09A5BE5DDC /* Pods-aggregate-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 290B6671C6574AEB82520A4A /* Pods-aggregate-dummy.m */; };
+		1A55F11343F446CFB1836296 /* BSONIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB3A18CA62241FFBCC87C26 /* BSONIterator.m */; };
+		1AF04BF5BF9841D8AB3DA20B /* md5.h in Headers */ = {isa = PBXBuildFile; fileRef = F99F3EF2C9544D94A5FE115F /* md5.h */; };
+		1E0CE31D8E5F42C691001574 /* MongoDBCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = F44598B2FAA0463C9458AE64 /* MongoDBCollection.h */; };
+		20979C45A8E24E17B3CF4B85 /* Pods-aggregate-mongo-c-driver-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A173E116390B4A40858FCE14 /* Pods-aggregate-mongo-c-driver-dummy.m */; };
+		2549E2E268094D63982FB39F /* MongoWriteConcern.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DD77ECD89AA4B91BABA676C /* MongoWriteConcern.m */; };
+		2BD13EEEF99C4D17B58C7599 /* MongoFindRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = D6BAD7DD498B43E5B60BCA55 /* MongoFindRequest.m */; };
+		2CD8FF2978524889B63CBFA2 /* gridfs.c in Sources */ = {isa = PBXBuildFile; fileRef = 4D3A3EC8170E4094BC855260 /* gridfs.c */; };
+		2D570C9AAEF74E4989C29562 /* NSData+BSONAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D02BB96CCC4C0BBBA4C7CA /* NSData+BSONAdditions.m */; };
+		2D6B6C2D4F0A43E3A990CD56 /* Mongo_PrivateInterfaces.h in Headers */ = {isa = PBXBuildFile; fileRef = 50001CCE5D024EA687C1B968 /* Mongo_PrivateInterfaces.h */; };
+		2F327BE839004AD5BDFE49FD /* MongoWriteConcern.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B3808102D4B44A8ABFC352B /* MongoWriteConcern.h */; };
+		301120811986CDCA00FC3A53 /* libPods-aggregate-ObjCMongoDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B10D054EDB054ED88ED50463 /* libPods-aggregate-ObjCMongoDB.a */; };
+		301121551986CEF300FC3A53 /* libPods-aggregate.a in Sources */ = {isa = PBXBuildFile; fileRef = 5265A9609D744CCC8B924C57 /* libPods-aggregate.a */; };
+		301121561986CEF300FC3A53 /* libPods-aggregate-ObjCMongoDB.a in Sources */ = {isa = PBXBuildFile; fileRef = B10D054EDB054ED88ED50463 /* libPods-aggregate-ObjCMongoDB.a */; };
+		301121571986CEF300FC3A53 /* libPods-aggregate-mongo-c-driver.a in Sources */ = {isa = PBXBuildFile; fileRef = 146A6F7F901E40B085175E4F /* libPods-aggregate-mongo-c-driver.a */; };
+		3197DA3A6BE84374820EBD11 /* env.h in Headers */ = {isa = PBXBuildFile; fileRef = AF67D004161142698AC85ADE /* env.h */; };
+		3626284BCEB946258B39F923 /* BSONTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BBD696650DB409D8761A597 /* BSONTypes.m */; };
+		3CFED0864B9E431089C6A626 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1E0BB426D34A5F927015AA /* Foundation.framework */; };
+		461B219AB97B443CA2585D08 /* BSONCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 704AAEDF13C24358AF853EC4 /* BSONCoding.h */; };
+		461D89ED8D2B40E7940DFEBE /* NSString+BSONAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A7A12DFA5F834B8486EF77B9 /* NSString+BSONAdditions.m */; };
+		4957ED06C62D45C0AEE82461 /* MongoKeyedPredicate.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E6137C6BA648F882E42032 /* MongoKeyedPredicate.m */; };
+		4AE5A7549680443B895523F4 /* ObjCBSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 46AA9023A3AE4567BB5907AB /* ObjCBSON.m */; };
+		4CF8588BEE0C4CDEB70BFD2E /* BSONDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = B7C98DE35ACB400981B82109 /* BSONDecoder.h */; };
+		4E021C848DCC42BC89631CD3 /* BSONEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 59ECCA9B82AF44CB82BAA083 /* BSONEncoder.h */; };
+		50128E45F03344C5B85DD583 /* bcon.h in Headers */ = {isa = PBXBuildFile; fileRef = 915713D58BFA443C80311A93 /* bcon.h */; };
+		50A7B17963464DFC871D86D2 /* md5.c in Sources */ = {isa = PBXBuildFile; fileRef = D9B2FB1122764403BF198437 /* md5.c */; };
+		510C7F349DD141C38DFF883D /* ObjCBSON.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D5873F2E69C4C49A478C559 /* ObjCBSON.h */; };
+		532DA6F967204847A6D52C94 /* env.c in Sources */ = {isa = PBXBuildFile; fileRef = 8486D3F691C54E8A81469838 /* env.c */; };
+		53EC058DE03C4677858C2547 /* NSDictionary+BSONAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = EA99BAE6112A40A3AB2C49DC /* NSDictionary+BSONAdditions.h */; };
+		55F9DE4C7702409DBFAA157A /* NSArray+MongoAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BF8BD9E23A41A9B3E988E8 /* NSArray+MongoAdditions.m */; };
+		569B1A34449B4A97B39F4AFC /* bcon.c in Sources */ = {isa = PBXBuildFile; fileRef = FCFA5FCE2D684A53A37086F4 /* bcon.c */; };
+		5714BDC02D264A58BE929989 /* bson.c in Sources */ = {isa = PBXBuildFile; fileRef = 9F43EFF090534232A2D4BA52 /* bson.c */; };
+		5ACB62C5B3B345E99DBAE560 /* MongoFindRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 8417CC8F2D1345759932EFF4 /* MongoFindRequest.h */; };
+		6608F637ADAA4B639856B796 /* OrderedDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 23149F13E58247B0A2B6486A /* OrderedDictionary.h */; };
+		6639BE421CC4485BBB5DC88E /* numbers.c in Sources */ = {isa = PBXBuildFile; fileRef = 01F517A89F18478095F6183F /* numbers.c */; };
+		6A7E36AEE68B4EEBA5DF0029 /* MongoUpdateRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CBE644C489C453F80AB6559 /* MongoUpdateRequest.h */; };
+		6D867271A13C4E8B81EAA794 /* MongoUpdateRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D8AF6CD59A44BA0A8AB0267 /* MongoUpdateRequest.m */; };
+		76ECBE9B56634F1D8066C312 /* MongoConnection.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D4124091F6A486A9DA4853F /* MongoConnection.h */; };
+		7D48454EC309482897C9D1F4 /* BSON_Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = C1A1A08640384DE087A9BDDB /* BSON_Helper.m */; };
+		84553EBF36954B4FB1EC21F2 /* BSONIterator.h in Headers */ = {isa = PBXBuildFile; fileRef = 1559D5AA4BFB40939A5C28E4 /* BSONIterator.h */; };
+		8748F251BDF3450A96CA4225 /* encoding.c in Sources */ = {isa = PBXBuildFile; fileRef = 082F323FCF454DDFB67E9A0A /* encoding.c */; };
+		8C8047F33EC04EEABCE21B82 /* MongoConnection+Diagnostics.m in Sources */ = {isa = PBXBuildFile; fileRef = A08582087741410B9864FE06 /* MongoConnection+Diagnostics.m */; };
+		8F37FA5518434C098E68BC9F /* NSDictionary+BSONAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DEFEE35D86994BB28A042DE8 /* NSDictionary+BSONAdditions.m */; };
+		95C5860DE554405992C59FF4 /* BSONDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = CC3A444DE636444785E5277E /* BSONDocument.h */; };
+		971051F1A169401EBD20BAE1 /* BSON_Helper.h in Headers */ = {isa = PBXBuildFile; fileRef = FBA925049AFF4C07A68CB510 /* BSON_Helper.h */; };
+		97670830852B45BF811830A5 /* MongoKeyedPredicate.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C073A79DC2647148A0593FF /* MongoKeyedPredicate.h */; };
+		97B63B52BA3C4F8CB622C994 /* MongoConnection+Diagnostics.h in Headers */ = {isa = PBXBuildFile; fileRef = 78C8F740A2EB4FF8910F34CE /* MongoConnection+Diagnostics.h */; };
+		9A2078A69F094BB9A43F55B0 /* NSData+BSONAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = EED0A1BAAC8840E3A4AC8E9E /* NSData+BSONAdditions.h */; };
+		9AD1420BD2C84AA490E492CA /* encoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B2F191B966A495A930CAEE0 /* encoding.h */; };
+		9B311F4EAC5241FFBF786055 /* BSONEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DBEA01343D54E2EA6C7EF41 /* BSONEncoder.m */; };
+		A3F509D6CD604312BE2FCCA5 /* gridfs.h in Headers */ = {isa = PBXBuildFile; fileRef = 3622E4E69B4A416A93E80CDB /* gridfs.h */; };
+		A6AA645DAA844DC1AA482763 /* NSString+BSONAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 57FD155EDB814A2595B158C6 /* NSString+BSONAdditions.h */; };
+		ACAEA150B2E3435181B226A5 /* MongoTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = DC23CCEFE7C146BDB0823794 /* MongoTypes.h */; };
+		AD9CF2B886724EED8AE87F7D /* MongoTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = CE06A5E334DB4F238D0C59FE /* MongoTypes.m */; };
+		ADBABE977D6E436895F4ACCC /* Mongo_Helper.h in Headers */ = {isa = PBXBuildFile; fileRef = 3389E3CE2F4C4D4687938374 /* Mongo_Helper.h */; };
+		AE80B7DB1A284435A272816B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1E0BB426D34A5F927015AA /* Foundation.framework */; };
+		AEE81AC8AD4545BA88F4857E /* BSONDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 749B2C6D6F774BCAACF5F90E /* BSONDecoder.m */; };
+		B0CFED757B76438682CCB932 /* Mongo_Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = E71BF3C2A93E447BAE2A7211 /* Mongo_Helper.m */; };
+		B71467FC288D452ABDAD555E /* MongoConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 621B3E3528B44E708D360399 /* MongoConnection.m */; };
+		BF630CC4AF734F14AA3EE8F4 /* OrderedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BCFF491B024835B3347C13 /* OrderedDictionary.m */; };
+		C10CED9B0CD04F599F53CC68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D1E0BB426D34A5F927015AA /* Foundation.framework */; };
+		C4EB3C3C20D1431B8379FB88 /* MongoDBCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FC1A0DC41F47F1BE5F32C3 /* MongoDBCollection.m */; };
+		D015C1E324D34E898FF2B8BE /* bson.h in Headers */ = {isa = PBXBuildFile; fileRef = 35F739E7D71E4F7FBB6FF482 /* bson.h */; };
+		D79FF998FD314A1EA08873C6 /* NSArray+MongoAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = B8C9FB478C4140BF88A9C53A /* NSArray+MongoAdditions.h */; };
+		DC41DEA87BC643A1984631FA /* mongo.c in Sources */ = {isa = PBXBuildFile; fileRef = 350FD268DAC24A81B61505E5 /* mongo.c */; };
+		DF46B5C4C6A04607BADFFD15 /* BSONDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BEF224CFF946DB9A33691A /* BSONDocument.m */; };
+		E434C70012B049F58B0DB233 /* NSManagedObject+BSONCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E8E32CEC4174585827F2C40 /* NSManagedObject+BSONCoding.h */; };
+		E9F61C7641E8417C851923D4 /* mongo.h in Headers */ = {isa = PBXBuildFile; fileRef = 5926A54AEDE143DF8ED3E1ED /* mongo.h */; };
+		EF3A667230BD4A89BC0AD567 /* Pods-aggregate-ObjCMongoDB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4998DB59BC504766BB02C98D /* Pods-aggregate-ObjCMongoDB-dummy.m */; };
+		F05C7C0C492B4E87ABCBE471 /* MongoPredicate.h in Headers */ = {isa = PBXBuildFile; fileRef = CDFC079EC7F3407D9A2C284E /* MongoPredicate.h */; };
+		F4FF0139BBFD4B28862FEA99 /* MongoCursor.m in Sources */ = {isa = PBXBuildFile; fileRef = B078D3F04E6D4A09AB962143 /* MongoCursor.m */; };
+		F60A41F910EC4ADCBB5DAA29 /* MongoCursor.h in Headers */ = {isa = PBXBuildFile; fileRef = CEF0240B025247EEA9E854EA /* MongoCursor.h */; };
+		F72C5292481343589A4D0F74 /* BSON_PrivateInterfaces.h in Headers */ = {isa = PBXBuildFile; fileRef = 4253D3C51DAA4BBD99064EED /* BSON_PrivateInterfaces.h */; };
+		FF5A80830B6E4567BB5BE889 /* NSManagedObject+BSONCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = A291F2CC62B64FAB9CCC9E75 /* NSManagedObject+BSONCoding.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		023564EE5B924C3093E8B669 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F75C3226FB74A739AB39664 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57D1640BC9CC4A8EA489042E;
+			remoteInfo = "Pods-aggregate-mongo-c-driver";
+		};
+		38C038E692F749779086F99C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F75C3226FB74A739AB39664 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57D1640BC9CC4A8EA489042E;
+			remoteInfo = "Pods-aggregate-mongo-c-driver";
+		};
+		AB7406B9650F405BB57865D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F75C3226FB74A739AB39664 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A212BFA45FCF4A1580B97FA3;
+			remoteInfo = "Pods-aggregate-ObjCMongoDB";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01F517A89F18478095F6183F /* numbers.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = numbers.c; path = src/numbers.c; sourceTree = "<group>"; };
+		082F323FCF454DDFB67E9A0A /* encoding.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = encoding.c; path = src/encoding.c; sourceTree = "<group>"; };
+		0CBE644C489C453F80AB6559 /* MongoUpdateRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MongoUpdateRequest.h; path = Mongo/MongoUpdateRequest.h; sourceTree = "<group>"; };
+		0D5873F2E69C4C49A478C559 /* ObjCBSON.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ObjCBSON.h; path = BSON/ObjCBSON.h; sourceTree = "<group>"; };
+		12B7A9BDAA5C4A49B17215E7 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		146A6F7F901E40B085175E4F /* libPods-aggregate-mongo-c-driver.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-aggregate-mongo-c-driver.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1559D5AA4BFB40939A5C28E4 /* BSONIterator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSONIterator.h; path = BSON/BSONIterator.h; sourceTree = "<group>"; };
+		1BBD696650DB409D8761A597 /* BSONTypes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BSONTypes.m; path = BSON/BSONTypes.m; sourceTree = "<group>"; };
+		1DF671D751E84F658D16A2AF /* Pods-aggregate-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-aggregate-environment.h"; sourceTree = "<group>"; };
+		203623B9599C4B27A455B0D4 /* Pods-aggregate-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-aggregate-resources.sh"; sourceTree = "<group>"; };
+		23149F13E58247B0A2B6486A /* OrderedDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OrderedDictionary.h; path = OrderedDictionary/OrderedDictionary.h; sourceTree = "<group>"; };
+		238BC1D3511A47B0956E2ADA /* MongoPredicate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MongoPredicate.m; path = Mongo/MongoPredicate.m; sourceTree = "<group>"; };
+		26BCFF491B024835B3347C13 /* OrderedDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OrderedDictionary.m; path = OrderedDictionary/OrderedDictionary.m; sourceTree = "<group>"; };
+		26CD54109F0940E99F3C64E3 /* ObjCMongoDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ObjCMongoDB.h; path = Mongo/ObjCMongoDB.h; sourceTree = "<group>"; };
+		28FC1A0DC41F47F1BE5F32C3 /* MongoDBCollection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MongoDBCollection.m; path = Mongo/MongoDBCollection.m; sourceTree = "<group>"; };
+		290B6671C6574AEB82520A4A /* Pods-aggregate-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-aggregate-dummy.m"; sourceTree = "<group>"; };
+		2D1E0BB426D34A5F927015AA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		2D4124091F6A486A9DA4853F /* MongoConnection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MongoConnection.h; path = Mongo/MongoConnection.h; sourceTree = "<group>"; };
+		2D8AF6CD59A44BA0A8AB0267 /* MongoUpdateRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MongoUpdateRequest.m; path = Mongo/MongoUpdateRequest.m; sourceTree = "<group>"; };
+		333B3423CF944E3D9EE4B372 /* BSONTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSONTypes.h; path = BSON/BSONTypes.h; sourceTree = "<group>"; };
+		3389E3CE2F4C4D4687938374 /* Mongo_Helper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Mongo_Helper.h; path = Mongo/Mongo_Helper.h; sourceTree = "<group>"; };
+		345A95D0A2FA42428424B6EF /* Pods-aggregate-ObjCMongoDB.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aggregate-ObjCMongoDB.xcconfig"; sourceTree = "<group>"; };
+		350FD268DAC24A81B61505E5 /* mongo.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = mongo.c; path = src/mongo.c; sourceTree = "<group>"; };
+		35F739E7D71E4F7FBB6FF482 /* bson.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bson.h; path = src/bson.h; sourceTree = "<group>"; };
+		3622E4E69B4A416A93E80CDB /* gridfs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = gridfs.h; path = src/gridfs.h; sourceTree = "<group>"; };
+		3B3808102D4B44A8ABFC352B /* MongoWriteConcern.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MongoWriteConcern.h; path = Mongo/MongoWriteConcern.h; sourceTree = "<group>"; };
+		3C073A79DC2647148A0593FF /* MongoKeyedPredicate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MongoKeyedPredicate.h; path = Mongo/MongoKeyedPredicate.h; sourceTree = "<group>"; };
+		3DD77ECD89AA4B91BABA676C /* MongoWriteConcern.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MongoWriteConcern.m; path = Mongo/MongoWriteConcern.m; sourceTree = "<group>"; };
+		4253D3C51DAA4BBD99064EED /* BSON_PrivateInterfaces.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSON_PrivateInterfaces.h; path = BSON/BSON_PrivateInterfaces.h; sourceTree = "<group>"; };
+		46AA9023A3AE4567BB5907AB /* ObjCBSON.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ObjCBSON.m; path = BSON/ObjCBSON.m; sourceTree = "<group>"; };
+		4998DB59BC504766BB02C98D /* Pods-aggregate-ObjCMongoDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-aggregate-ObjCMongoDB-dummy.m"; sourceTree = "<group>"; };
+		4AE599F4B8D14824BED1324D /* Pods-aggregate-mongo-c-driver-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aggregate-mongo-c-driver-Private.xcconfig"; sourceTree = "<group>"; };
+		4D3A3EC8170E4094BC855260 /* gridfs.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = gridfs.c; path = src/gridfs.c; sourceTree = "<group>"; };
+		4DBEA01343D54E2EA6C7EF41 /* BSONEncoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BSONEncoder.m; path = BSON/BSONEncoder.m; sourceTree = "<group>"; };
+		50001CCE5D024EA687C1B968 /* Mongo_PrivateInterfaces.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Mongo_PrivateInterfaces.h; path = Mongo/Mongo_PrivateInterfaces.h; sourceTree = "<group>"; };
+		5265A9609D744CCC8B924C57 /* libPods-aggregate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-aggregate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		57FD155EDB814A2595B158C6 /* NSString+BSONAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+BSONAdditions.h"; path = "BSON/NSString+BSONAdditions.h"; sourceTree = "<group>"; };
+		5926A54AEDE143DF8ED3E1ED /* mongo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mongo.h; path = src/mongo.h; sourceTree = "<group>"; };
+		59ECCA9B82AF44CB82BAA083 /* BSONEncoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSONEncoder.h; path = BSON/BSONEncoder.h; sourceTree = "<group>"; };
+		5E8E32CEC4174585827F2C40 /* NSManagedObject+BSONCoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSManagedObject+BSONCoding.h"; path = "BSON/NSManagedObject+BSONCoding.h"; sourceTree = "<group>"; };
+		60A989BD1C7542BEBBFEBBA9 /* Pods-aggregate-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-aggregate-acknowledgements.markdown"; sourceTree = "<group>"; };
+		621B3E3528B44E708D360399 /* MongoConnection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MongoConnection.m; path = Mongo/MongoConnection.m; sourceTree = "<group>"; };
+		6AB3A18CA62241FFBCC87C26 /* BSONIterator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BSONIterator.m; path = BSON/BSONIterator.m; sourceTree = "<group>"; };
+		704AAEDF13C24358AF853EC4 /* BSONCoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSONCoding.h; path = BSON/BSONCoding.h; sourceTree = "<group>"; };
+		7196DD73971745768945047A /* Pods-aggregate-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-aggregate-acknowledgements.plist"; sourceTree = "<group>"; };
+		749B2C6D6F774BCAACF5F90E /* BSONDecoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BSONDecoder.m; path = BSON/BSONDecoder.m; sourceTree = "<group>"; };
+		75BEF224CFF946DB9A33691A /* BSONDocument.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BSONDocument.m; path = BSON/BSONDocument.m; sourceTree = "<group>"; };
+		75BF8BD9E23A41A9B3E988E8 /* NSArray+MongoAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MongoAdditions.m"; path = "Mongo/NSArray+MongoAdditions.m"; sourceTree = "<group>"; };
+		75CB533E50D74F0F914C7206 /* Pods-aggregate.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aggregate.xcconfig"; sourceTree = "<group>"; };
+		75D02BB96CCC4C0BBBA4C7CA /* NSData+BSONAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+BSONAdditions.m"; path = "BSON/NSData+BSONAdditions.m"; sourceTree = "<group>"; };
+		78152BBE513B4296AD7E7704 /* Pods-aggregate-ObjCMongoDB-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-aggregate-ObjCMongoDB-prefix.pch"; sourceTree = "<group>"; };
+		78C8F740A2EB4FF8910F34CE /* MongoConnection+Diagnostics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MongoConnection+Diagnostics.h"; path = "Mongo/MongoConnection+Diagnostics.h"; sourceTree = "<group>"; };
+		8417CC8F2D1345759932EFF4 /* MongoFindRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MongoFindRequest.h; path = Mongo/MongoFindRequest.h; sourceTree = "<group>"; };
+		8486D3F691C54E8A81469838 /* env.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = env.c; path = src/env.c; sourceTree = "<group>"; };
+		8B2F191B966A495A930CAEE0 /* encoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = encoding.h; path = src/encoding.h; sourceTree = "<group>"; };
+		915713D58BFA443C80311A93 /* bcon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bcon.h; path = src/bcon.h; sourceTree = "<group>"; };
+		9F43EFF090534232A2D4BA52 /* bson.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = bson.c; path = src/bson.c; sourceTree = "<group>"; };
+		A08582087741410B9864FE06 /* MongoConnection+Diagnostics.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MongoConnection+Diagnostics.m"; path = "Mongo/MongoConnection+Diagnostics.m"; sourceTree = "<group>"; };
+		A173E116390B4A40858FCE14 /* Pods-aggregate-mongo-c-driver-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-aggregate-mongo-c-driver-dummy.m"; sourceTree = "<group>"; };
+		A291F2CC62B64FAB9CCC9E75 /* NSManagedObject+BSONCoding.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSManagedObject+BSONCoding.m"; path = "BSON/NSManagedObject+BSONCoding.m"; sourceTree = "<group>"; };
+		A349DFA10FC746ECB36E4C6B /* Pods-aggregate-mongo-c-driver.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aggregate-mongo-c-driver.xcconfig"; sourceTree = "<group>"; };
+		A7A12DFA5F834B8486EF77B9 /* NSString+BSONAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+BSONAdditions.m"; path = "BSON/NSString+BSONAdditions.m"; sourceTree = "<group>"; };
+		AF67D004161142698AC85ADE /* env.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = env.h; path = src/env.h; sourceTree = "<group>"; };
+		B078D3F04E6D4A09AB962143 /* MongoCursor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MongoCursor.m; path = Mongo/MongoCursor.m; sourceTree = "<group>"; };
+		B10D054EDB054ED88ED50463 /* libPods-aggregate-ObjCMongoDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-aggregate-ObjCMongoDB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7C98DE35ACB400981B82109 /* BSONDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSONDecoder.h; path = BSON/BSONDecoder.h; sourceTree = "<group>"; };
+		B8C9FB478C4140BF88A9C53A /* NSArray+MongoAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MongoAdditions.h"; path = "Mongo/NSArray+MongoAdditions.h"; sourceTree = "<group>"; };
+		C1A1A08640384DE087A9BDDB /* BSON_Helper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BSON_Helper.m; path = BSON/BSON_Helper.m; sourceTree = "<group>"; };
+		C3E6137C6BA648F882E42032 /* MongoKeyedPredicate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MongoKeyedPredicate.m; path = Mongo/MongoKeyedPredicate.m; sourceTree = "<group>"; };
+		CC3A444DE636444785E5277E /* BSONDocument.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSONDocument.h; path = BSON/BSONDocument.h; sourceTree = "<group>"; };
+		CDFC079EC7F3407D9A2C284E /* MongoPredicate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MongoPredicate.h; path = Mongo/MongoPredicate.h; sourceTree = "<group>"; };
+		CE06A5E334DB4F238D0C59FE /* MongoTypes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MongoTypes.m; path = Mongo/MongoTypes.m; sourceTree = "<group>"; };
+		CEF0240B025247EEA9E854EA /* MongoCursor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MongoCursor.h; path = Mongo/MongoCursor.h; sourceTree = "<group>"; };
+		D6BAD7DD498B43E5B60BCA55 /* MongoFindRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MongoFindRequest.m; path = Mongo/MongoFindRequest.m; sourceTree = "<group>"; };
+		D9B2FB1122764403BF198437 /* md5.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = md5.c; path = src/md5.c; sourceTree = "<group>"; };
+		DC23CCEFE7C146BDB0823794 /* MongoTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MongoTypes.h; path = Mongo/MongoTypes.h; sourceTree = "<group>"; };
+		DEFEE35D86994BB28A042DE8 /* NSDictionary+BSONAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+BSONAdditions.m"; path = "BSON/NSDictionary+BSONAdditions.m"; sourceTree = "<group>"; };
+		E2337A8F569A402A848FF00C /* Pods-aggregate-mongo-c-driver-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-aggregate-mongo-c-driver-prefix.pch"; sourceTree = "<group>"; };
+		E71BF3C2A93E447BAE2A7211 /* Mongo_Helper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Mongo_Helper.m; path = Mongo/Mongo_Helper.m; sourceTree = "<group>"; };
+		EA99BAE6112A40A3AB2C49DC /* NSDictionary+BSONAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+BSONAdditions.h"; path = "BSON/NSDictionary+BSONAdditions.h"; sourceTree = "<group>"; };
+		EED0A1BAAC8840E3A4AC8E9E /* NSData+BSONAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+BSONAdditions.h"; path = "BSON/NSData+BSONAdditions.h"; sourceTree = "<group>"; };
+		F44598B2FAA0463C9458AE64 /* MongoDBCollection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MongoDBCollection.h; path = Mongo/MongoDBCollection.h; sourceTree = "<group>"; };
+		F99F3EF2C9544D94A5FE115F /* md5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = md5.h; path = src/md5.h; sourceTree = "<group>"; };
+		FBA925049AFF4C07A68CB510 /* BSON_Helper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSON_Helper.h; path = BSON/BSON_Helper.h; sourceTree = "<group>"; };
+		FCFA5FCE2D684A53A37086F4 /* bcon.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = bcon.c; path = src/bcon.c; sourceTree = "<group>"; };
+		FE2C4A6EA48A4356A3781940 /* Pods-aggregate-ObjCMongoDB-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-aggregate-ObjCMongoDB-Private.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1ED2E12604724143813C6347 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				301120811986CDCA00FC3A53 /* libPods-aggregate-ObjCMongoDB.a in Frameworks */,
+				3CFED0864B9E431089C6A626 /* Foundation.framework in Frameworks */,
+				0CF8F189FF5D4A43B034290E /* libPods-aggregate-mongo-c-driver.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5418614B1080484DBDC610C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE80B7DB1A284435A272816B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CFA8C45F87AF4835AC0B5FC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C10CED9B0CD04F599F53CC68 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		062020A78E70466390BEA7DB /* Pods-aggregate */ = {
+			isa = PBXGroup;
+			children = (
+				75CB533E50D74F0F914C7206 /* Pods-aggregate.xcconfig */,
+				60A989BD1C7542BEBBFEBBA9 /* Pods-aggregate-acknowledgements.markdown */,
+				7196DD73971745768945047A /* Pods-aggregate-acknowledgements.plist */,
+				290B6671C6574AEB82520A4A /* Pods-aggregate-dummy.m */,
+				1DF671D751E84F658D16A2AF /* Pods-aggregate-environment.h */,
+				203623B9599C4B27A455B0D4 /* Pods-aggregate-resources.sh */,
+			);
+			name = "Pods-aggregate";
+			sourceTree = "<group>";
+		};
+		0C104AEDD9024B7DB4A69064 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				2D1E0BB426D34A5F927015AA /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		3F93632975E24B3F99A37405 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5265A9609D744CCC8B924C57 /* libPods-aggregate.a */,
+				B10D054EDB054ED88ED50463 /* libPods-aggregate-ObjCMongoDB.a */,
+				146A6F7F901E40B085175E4F /* libPods-aggregate-mongo-c-driver.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		622BAD97D37A4D1A8191778F /* ObjCMongoDB */ = {
+			isa = PBXGroup;
+			children = (
+				E3053C6142914AE4AD8811F3 /* BSON */,
+				79258C3D56404B3DAFD9E206 /* Mongo */,
+				ED6377E90D934C72A68AFE52 /* OrderedDictionary */,
+				C6DE49B1E1FB41B88C3EA214 /* Support Files */,
+			);
+			path = ObjCMongoDB;
+			sourceTree = "<group>";
+		};
+		79258C3D56404B3DAFD9E206 /* Mongo */ = {
+			isa = PBXGroup;
+			children = (
+				2D4124091F6A486A9DA4853F /* MongoConnection.h */,
+				621B3E3528B44E708D360399 /* MongoConnection.m */,
+				78C8F740A2EB4FF8910F34CE /* MongoConnection+Diagnostics.h */,
+				A08582087741410B9864FE06 /* MongoConnection+Diagnostics.m */,
+				CEF0240B025247EEA9E854EA /* MongoCursor.h */,
+				B078D3F04E6D4A09AB962143 /* MongoCursor.m */,
+				F44598B2FAA0463C9458AE64 /* MongoDBCollection.h */,
+				28FC1A0DC41F47F1BE5F32C3 /* MongoDBCollection.m */,
+				8417CC8F2D1345759932EFF4 /* MongoFindRequest.h */,
+				D6BAD7DD498B43E5B60BCA55 /* MongoFindRequest.m */,
+				3C073A79DC2647148A0593FF /* MongoKeyedPredicate.h */,
+				C3E6137C6BA648F882E42032 /* MongoKeyedPredicate.m */,
+				CDFC079EC7F3407D9A2C284E /* MongoPredicate.h */,
+				238BC1D3511A47B0956E2ADA /* MongoPredicate.m */,
+				DC23CCEFE7C146BDB0823794 /* MongoTypes.h */,
+				CE06A5E334DB4F238D0C59FE /* MongoTypes.m */,
+				0CBE644C489C453F80AB6559 /* MongoUpdateRequest.h */,
+				2D8AF6CD59A44BA0A8AB0267 /* MongoUpdateRequest.m */,
+				3B3808102D4B44A8ABFC352B /* MongoWriteConcern.h */,
+				3DD77ECD89AA4B91BABA676C /* MongoWriteConcern.m */,
+				3389E3CE2F4C4D4687938374 /* Mongo_Helper.h */,
+				E71BF3C2A93E447BAE2A7211 /* Mongo_Helper.m */,
+				50001CCE5D024EA687C1B968 /* Mongo_PrivateInterfaces.h */,
+				B8C9FB478C4140BF88A9C53A /* NSArray+MongoAdditions.h */,
+				75BF8BD9E23A41A9B3E988E8 /* NSArray+MongoAdditions.m */,
+				26CD54109F0940E99F3C64E3 /* ObjCMongoDB.h */,
+			);
+			name = Mongo;
+			sourceTree = "<group>";
+		};
+		8B4CC6A55DBE4879954A2355 /* mongo-c-driver */ = {
+			isa = PBXGroup;
+			children = (
+				FCFA5FCE2D684A53A37086F4 /* bcon.c */,
+				915713D58BFA443C80311A93 /* bcon.h */,
+				9F43EFF090534232A2D4BA52 /* bson.c */,
+				35F739E7D71E4F7FBB6FF482 /* bson.h */,
+				082F323FCF454DDFB67E9A0A /* encoding.c */,
+				8B2F191B966A495A930CAEE0 /* encoding.h */,
+				8486D3F691C54E8A81469838 /* env.c */,
+				AF67D004161142698AC85ADE /* env.h */,
+				4D3A3EC8170E4094BC855260 /* gridfs.c */,
+				3622E4E69B4A416A93E80CDB /* gridfs.h */,
+				D9B2FB1122764403BF198437 /* md5.c */,
+				F99F3EF2C9544D94A5FE115F /* md5.h */,
+				350FD268DAC24A81B61505E5 /* mongo.c */,
+				5926A54AEDE143DF8ED3E1ED /* mongo.h */,
+				01F517A89F18478095F6183F /* numbers.c */,
+				EC212FDBA58A4933B4715D88 /* Support Files */,
+			);
+			path = "mongo-c-driver";
+			sourceTree = "<group>";
+		};
+		9609DA45B9E44982A956F83D /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				062020A78E70466390BEA7DB /* Pods-aggregate */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B99D2E28B60B4005B67C056E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				622BAD97D37A4D1A8191778F /* ObjCMongoDB */,
+				8B4CC6A55DBE4879954A2355 /* mongo-c-driver */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C6DE49B1E1FB41B88C3EA214 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				345A95D0A2FA42428424B6EF /* Pods-aggregate-ObjCMongoDB.xcconfig */,
+				FE2C4A6EA48A4356A3781940 /* Pods-aggregate-ObjCMongoDB-Private.xcconfig */,
+				4998DB59BC504766BB02C98D /* Pods-aggregate-ObjCMongoDB-dummy.m */,
+				78152BBE513B4296AD7E7704 /* Pods-aggregate-ObjCMongoDB-prefix.pch */,
+			);
+			name = "Support Files";
+			sourceTree = SOURCE_ROOT;
+		};
+		E3053C6142914AE4AD8811F3 /* BSON */ = {
+			isa = PBXGroup;
+			children = (
+				704AAEDF13C24358AF853EC4 /* BSONCoding.h */,
+				B7C98DE35ACB400981B82109 /* BSONDecoder.h */,
+				749B2C6D6F774BCAACF5F90E /* BSONDecoder.m */,
+				CC3A444DE636444785E5277E /* BSONDocument.h */,
+				75BEF224CFF946DB9A33691A /* BSONDocument.m */,
+				59ECCA9B82AF44CB82BAA083 /* BSONEncoder.h */,
+				4DBEA01343D54E2EA6C7EF41 /* BSONEncoder.m */,
+				1559D5AA4BFB40939A5C28E4 /* BSONIterator.h */,
+				6AB3A18CA62241FFBCC87C26 /* BSONIterator.m */,
+				333B3423CF944E3D9EE4B372 /* BSONTypes.h */,
+				1BBD696650DB409D8761A597 /* BSONTypes.m */,
+				FBA925049AFF4C07A68CB510 /* BSON_Helper.h */,
+				C1A1A08640384DE087A9BDDB /* BSON_Helper.m */,
+				4253D3C51DAA4BBD99064EED /* BSON_PrivateInterfaces.h */,
+				EED0A1BAAC8840E3A4AC8E9E /* NSData+BSONAdditions.h */,
+				75D02BB96CCC4C0BBBA4C7CA /* NSData+BSONAdditions.m */,
+				EA99BAE6112A40A3AB2C49DC /* NSDictionary+BSONAdditions.h */,
+				DEFEE35D86994BB28A042DE8 /* NSDictionary+BSONAdditions.m */,
+				5E8E32CEC4174585827F2C40 /* NSManagedObject+BSONCoding.h */,
+				A291F2CC62B64FAB9CCC9E75 /* NSManagedObject+BSONCoding.m */,
+				57FD155EDB814A2595B158C6 /* NSString+BSONAdditions.h */,
+				A7A12DFA5F834B8486EF77B9 /* NSString+BSONAdditions.m */,
+				0D5873F2E69C4C49A478C559 /* ObjCBSON.h */,
+				46AA9023A3AE4567BB5907AB /* ObjCBSON.m */,
+			);
+			name = BSON;
+			sourceTree = "<group>";
+		};
+		EC212FDBA58A4933B4715D88 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A349DFA10FC746ECB36E4C6B /* Pods-aggregate-mongo-c-driver.xcconfig */,
+				4AE599F4B8D14824BED1324D /* Pods-aggregate-mongo-c-driver-Private.xcconfig */,
+				A173E116390B4A40858FCE14 /* Pods-aggregate-mongo-c-driver-dummy.m */,
+				E2337A8F569A402A848FF00C /* Pods-aggregate-mongo-c-driver-prefix.pch */,
+			);
+			name = "Support Files";
+			sourceTree = SOURCE_ROOT;
+		};
+		ED6377E90D934C72A68AFE52 /* OrderedDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				23149F13E58247B0A2B6486A /* OrderedDictionary.h */,
+				26BCFF491B024835B3347C13 /* OrderedDictionary.m */,
+			);
+			name = OrderedDictionary;
+			sourceTree = "<group>";
+		};
+		EF2B20A2B6914F379ECECE74 = {
+			isa = PBXGroup;
+			children = (
+				12B7A9BDAA5C4A49B17215E7 /* Podfile */,
+				FD7E508AF3784F34BD1F7E3C /* Frameworks */,
+				B99D2E28B60B4005B67C056E /* Pods */,
+				3F93632975E24B3F99A37405 /* Products */,
+				9609DA45B9E44982A956F83D /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		FD7E508AF3784F34BD1F7E3C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C104AEDD9024B7DB4A69064 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4FDB5DD85B2B4550BDED6CBB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50128E45F03344C5B85DD583 /* bcon.h in Headers */,
+				D015C1E324D34E898FF2B8BE /* bson.h in Headers */,
+				9AD1420BD2C84AA490E492CA /* encoding.h in Headers */,
+				3197DA3A6BE84374820EBD11 /* env.h in Headers */,
+				A3F509D6CD604312BE2FCCA5 /* gridfs.h in Headers */,
+				1AF04BF5BF9841D8AB3DA20B /* md5.h in Headers */,
+				E9F61C7641E8417C851923D4 /* mongo.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8E1F9E84E964F65A9ACD091 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				461B219AB97B443CA2585D08 /* BSONCoding.h in Headers */,
+				4CF8588BEE0C4CDEB70BFD2E /* BSONDecoder.h in Headers */,
+				95C5860DE554405992C59FF4 /* BSONDocument.h in Headers */,
+				4E021C848DCC42BC89631CD3 /* BSONEncoder.h in Headers */,
+				84553EBF36954B4FB1EC21F2 /* BSONIterator.h in Headers */,
+				06EABD2315804723A4D5BE6D /* BSONTypes.h in Headers */,
+				971051F1A169401EBD20BAE1 /* BSON_Helper.h in Headers */,
+				F72C5292481343589A4D0F74 /* BSON_PrivateInterfaces.h in Headers */,
+				97B63B52BA3C4F8CB622C994 /* MongoConnection+Diagnostics.h in Headers */,
+				76ECBE9B56634F1D8066C312 /* MongoConnection.h in Headers */,
+				F60A41F910EC4ADCBB5DAA29 /* MongoCursor.h in Headers */,
+				1E0CE31D8E5F42C691001574 /* MongoDBCollection.h in Headers */,
+				5ACB62C5B3B345E99DBAE560 /* MongoFindRequest.h in Headers */,
+				97670830852B45BF811830A5 /* MongoKeyedPredicate.h in Headers */,
+				F05C7C0C492B4E87ABCBE471 /* MongoPredicate.h in Headers */,
+				ACAEA150B2E3435181B226A5 /* MongoTypes.h in Headers */,
+				6A7E36AEE68B4EEBA5DF0029 /* MongoUpdateRequest.h in Headers */,
+				2F327BE839004AD5BDFE49FD /* MongoWriteConcern.h in Headers */,
+				ADBABE977D6E436895F4ACCC /* Mongo_Helper.h in Headers */,
+				2D6B6C2D4F0A43E3A990CD56 /* Mongo_PrivateInterfaces.h in Headers */,
+				D79FF998FD314A1EA08873C6 /* NSArray+MongoAdditions.h in Headers */,
+				9A2078A69F094BB9A43F55B0 /* NSData+BSONAdditions.h in Headers */,
+				53EC058DE03C4677858C2547 /* NSDictionary+BSONAdditions.h in Headers */,
+				E434C70012B049F58B0DB233 /* NSManagedObject+BSONCoding.h in Headers */,
+				A6AA645DAA844DC1AA482763 /* NSString+BSONAdditions.h in Headers */,
+				510C7F349DD141C38DFF883D /* ObjCBSON.h in Headers */,
+				113547DB3FB74570997B5795 /* ObjCMongoDB.h in Headers */,
+				6608F637ADAA4B639856B796 /* OrderedDictionary.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		57D1640BC9CC4A8EA489042E /* Pods-aggregate-mongo-c-driver */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35249516009846A29D71B0B1 /* Build configuration list for PBXNativeTarget "Pods-aggregate-mongo-c-driver" */;
+			buildPhases = (
+				70D67C27A7874FE6BFB05169 /* Sources */,
+				5418614B1080484DBDC610C4 /* Frameworks */,
+				4FDB5DD85B2B4550BDED6CBB /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-aggregate-mongo-c-driver";
+			productName = "Pods-aggregate-mongo-c-driver";
+			productReference = 146A6F7F901E40B085175E4F /* libPods-aggregate-mongo-c-driver.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		5EE24B83CF944856B214831B /* Pods-aggregate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 936A470B66D146E0B2AA5ADD /* Build configuration list for PBXNativeTarget "Pods-aggregate" */;
+			buildPhases = (
+				1B557F600EF340CCBF5FE874 /* Sources */,
+				1ED2E12604724143813C6347 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				81B4DCCC8B7B445B975C0C86 /* PBXTargetDependency */,
+				4C6EA9F6C7DF4190ACF217A6 /* PBXTargetDependency */,
+			);
+			name = "Pods-aggregate";
+			productName = "Pods-aggregate";
+			productReference = 5265A9609D744CCC8B924C57 /* libPods-aggregate.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A212BFA45FCF4A1580B97FA3 /* Pods-aggregate-ObjCMongoDB */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4AEEEA870F242A4B4CA02A4 /* Build configuration list for PBXNativeTarget "Pods-aggregate-ObjCMongoDB" */;
+			buildPhases = (
+				7061616999FA4FA6874D30DC /* Sources */,
+				CFA8C45F87AF4835AC0B5FC4 /* Frameworks */,
+				A8E1F9E84E964F65A9ACD091 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7AC14C494E2F4D20BF4673E9 /* PBXTargetDependency */,
+			);
+			name = "Pods-aggregate-ObjCMongoDB";
+			productName = "Pods-aggregate-ObjCMongoDB";
+			productReference = B10D054EDB054ED88ED50463 /* libPods-aggregate-ObjCMongoDB.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F75C3226FB74A739AB39664 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+			};
+			buildConfigurationList = 03A5223EF3C14705A4AEF324 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EF2B20A2B6914F379ECECE74;
+			productRefGroup = 3F93632975E24B3F99A37405 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5EE24B83CF944856B214831B /* Pods-aggregate */,
+				A212BFA45FCF4A1580B97FA3 /* Pods-aggregate-ObjCMongoDB */,
+				57D1640BC9CC4A8EA489042E /* Pods-aggregate-mongo-c-driver */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B557F600EF340CCBF5FE874 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				301121551986CEF300FC3A53 /* libPods-aggregate.a in Sources */,
+				301121561986CEF300FC3A53 /* libPods-aggregate-ObjCMongoDB.a in Sources */,
+				301121571986CEF300FC3A53 /* libPods-aggregate-mongo-c-driver.a in Sources */,
+				16C78D09F71F4E09A5BE5DDC /* Pods-aggregate-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7061616999FA4FA6874D30DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEE81AC8AD4545BA88F4857E /* BSONDecoder.m in Sources */,
+				DF46B5C4C6A04607BADFFD15 /* BSONDocument.m in Sources */,
+				9B311F4EAC5241FFBF786055 /* BSONEncoder.m in Sources */,
+				1A55F11343F446CFB1836296 /* BSONIterator.m in Sources */,
+				3626284BCEB946258B39F923 /* BSONTypes.m in Sources */,
+				7D48454EC309482897C9D1F4 /* BSON_Helper.m in Sources */,
+				8C8047F33EC04EEABCE21B82 /* MongoConnection+Diagnostics.m in Sources */,
+				B71467FC288D452ABDAD555E /* MongoConnection.m in Sources */,
+				F4FF0139BBFD4B28862FEA99 /* MongoCursor.m in Sources */,
+				C4EB3C3C20D1431B8379FB88 /* MongoDBCollection.m in Sources */,
+				2BD13EEEF99C4D17B58C7599 /* MongoFindRequest.m in Sources */,
+				4957ED06C62D45C0AEE82461 /* MongoKeyedPredicate.m in Sources */,
+				09D1995A2AE34944A22320CB /* MongoPredicate.m in Sources */,
+				AD9CF2B886724EED8AE87F7D /* MongoTypes.m in Sources */,
+				6D867271A13C4E8B81EAA794 /* MongoUpdateRequest.m in Sources */,
+				2549E2E268094D63982FB39F /* MongoWriteConcern.m in Sources */,
+				B0CFED757B76438682CCB932 /* Mongo_Helper.m in Sources */,
+				55F9DE4C7702409DBFAA157A /* NSArray+MongoAdditions.m in Sources */,
+				2D570C9AAEF74E4989C29562 /* NSData+BSONAdditions.m in Sources */,
+				8F37FA5518434C098E68BC9F /* NSDictionary+BSONAdditions.m in Sources */,
+				FF5A80830B6E4567BB5BE889 /* NSManagedObject+BSONCoding.m in Sources */,
+				461D89ED8D2B40E7940DFEBE /* NSString+BSONAdditions.m in Sources */,
+				4AE5A7549680443B895523F4 /* ObjCBSON.m in Sources */,
+				BF630CC4AF734F14AA3EE8F4 /* OrderedDictionary.m in Sources */,
+				EF3A667230BD4A89BC0AD567 /* Pods-aggregate-ObjCMongoDB-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70D67C27A7874FE6BFB05169 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20979C45A8E24E17B3CF4B85 /* Pods-aggregate-mongo-c-driver-dummy.m in Sources */,
+				569B1A34449B4A97B39F4AFC /* bcon.c in Sources */,
+				5714BDC02D264A58BE929989 /* bson.c in Sources */,
+				8748F251BDF3450A96CA4225 /* encoding.c in Sources */,
+				532DA6F967204847A6D52C94 /* env.c in Sources */,
+				2CD8FF2978524889B63CBFA2 /* gridfs.c in Sources */,
+				50A7B17963464DFC871D86D2 /* md5.c in Sources */,
+				DC41DEA87BC643A1984631FA /* mongo.c in Sources */,
+				6639BE421CC4485BBB5DC88E /* numbers.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4C6EA9F6C7DF4190ACF217A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 57D1640BC9CC4A8EA489042E /* Pods-aggregate-mongo-c-driver */;
+			targetProxy = 38C038E692F749779086F99C /* PBXContainerItemProxy */;
+		};
+		7AC14C494E2F4D20BF4673E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 57D1640BC9CC4A8EA489042E /* Pods-aggregate-mongo-c-driver */;
+			targetProxy = 023564EE5B924C3093E8B669 /* PBXContainerItemProxy */;
+		};
+		81B4DCCC8B7B445B975C0C86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A212BFA45FCF4A1580B97FA3 /* Pods-aggregate-ObjCMongoDB */;
+			targetProxy = AB7406B9650F405BB57865D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		09721BBE64D94239A1174E64 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE2C4A6EA48A4356A3781940 /* Pods-aggregate-ObjCMongoDB-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-aggregate-ObjCMongoDB-prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2CB7B2495CAC4113BB75E8A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AE599F4B8D14824BED1324D /* Pods-aggregate-mongo-c-driver-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-aggregate-mongo-c-driver-prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4C6642E9102F4707854FC661 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AE599F4B8D14824BED1324D /* Pods-aggregate-mongo-c-driver-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-aggregate-mongo-c-driver-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		60AF572982FE41758D4B8987 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8788C5CB596B447B86FA7BFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		A9E86087E1BC4A5D816F748D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE2C4A6EA48A4356A3781940 /* Pods-aggregate-ObjCMongoDB-Private.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Pods-aggregate-ObjCMongoDB-prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B99C468B07324D4E8320355E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75CB533E50D74F0F914C7206 /* Pods-aggregate.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		CB7F42CC641648B59D037E54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75CB533E50D74F0F914C7206 /* Pods-aggregate.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INSTALL_PATH = "$(BUILT_PRODUCTS_DIR)";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-DNS_BLOCK_ASSERTIONS=1",
+					"$(inherited)",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03A5223EF3C14705A4AEF324 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8788C5CB596B447B86FA7BFB /* Debug */,
+				60AF572982FE41758D4B8987 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35249516009846A29D71B0B1 /* Build configuration list for PBXNativeTarget "Pods-aggregate-mongo-c-driver" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C6642E9102F4707854FC661 /* Debug */,
+				2CB7B2495CAC4113BB75E8A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		936A470B66D146E0B2AA5ADD /* Build configuration list for PBXNativeTarget "Pods-aggregate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B99C468B07324D4E8320355E /* Debug */,
+				CB7F42CC641648B59D037E54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4AEEEA870F242A4B4CA02A4 /* Build configuration list for PBXNativeTarget "Pods-aggregate-ObjCMongoDB" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9E86087E1BC4A5D816F748D /* Debug */,
+				09721BBE64D94239A1174E64 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7F75C3226FB74A739AB39664 /* Project object */;
+}

@@ -1,0 +1,25 @@
+PODS:
+  - mongo-c-driver (0.8.1)
+  - ObjCMongoDB (0.11.0):
+    - mongo-c-driver (~> 0.8.1)
+    - ObjCMongoDB/BSON
+    - ObjCMongoDB/Mongo
+    - ObjCMongoDB/OrderedDictionary
+  - ObjCMongoDB/BSON (0.11.0):
+    - mongo-c-driver (~> 0.8.1)
+    - ObjCMongoDB/OrderedDictionary (~> 0.11.0)
+  - ObjCMongoDB/Mongo (0.11.0):
+    - mongo-c-driver (~> 0.8.1)
+    - ObjCMongoDB/BSON (~> 0.11.0)
+    - ObjCMongoDB/OrderedDictionary (~> 0.11.0)
+  - ObjCMongoDB/OrderedDictionary (0.11.0):
+    - mongo-c-driver (~> 0.8.1)
+
+DEPENDENCIES:
+  - ObjCMongoDB (~> 0.11)
+
+SPEC CHECKSUMS:
+  mongo-c-driver: 5a1c0d9d428c2df1281bf329f3d0aebb9875e485
+  ObjCMongoDB: e333a6d8a972d6e05c29e6fd8b902fe1ac68da2c
+
+COCOAPODS: 0.33.1
