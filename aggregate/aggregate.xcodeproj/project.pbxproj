@@ -40,6 +40,18 @@
 		30801D061987FE1E009058B3 /* libcocoa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 30801CF31987FE1E009058B3 /* libcocoa.a */; };
 		30801D1A198814CF009058B3 /* CategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30801D19198814CE009058B3 /* CategoryCell.m */; };
 		309EB6FA1981802B00A6E534 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0EA421197840BE007353EF /* Main.storyboard */; };
+		30AC521D1989795600ECECB6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AC52081989795500ECECB6 /* AppDelegate.m */; };
+		30AC521F1989795600ECECB6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30AC520B1989795500ECECB6 /* InfoPlist.strings */; };
+		30AC52201989795600ECECB6 /* HomeTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AC520E1989795500ECECB6 /* HomeTViewController.m */; };
+		30AC52211989795600ECECB6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30AC520F1989795500ECECB6 /* Images.xcassets */; };
+		30AC52221989795600ECECB6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AC52101989795500ECECB6 /* main.m */; };
+		30AC52231989795600ECECB6 /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AC52121989795500ECECB6 /* MyCell.m */; };
+		30AC52241989795600ECECB6 /* test-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30AC52131989795500ECECB6 /* test-Info.plist */; };
+		30AC52251989795600ECECB6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30AC52191989795600ECECB6 /* InfoPlist.strings */; };
+		30AC52261989795600ECECB6 /* testTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30AC521B1989795600ECECB6 /* testTests-Info.plist */; };
+		30AC52271989795600ECECB6 /* testTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 30AC521C1989795600ECECB6 /* testTests.m */; };
+		30AC523919897A7C00ECECB6 /* Main.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = 5A0EA421197840BE007353EF /* Main.storyboard */; };
+		30AC530219897B0200ECECB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30AC52091989795500ECECB6 /* Main.storyboard */; };
 		30FAFC1D198950EA00475656 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 30FAFBA8198950EA00475656 /* .gitignore */; };
 		30FAFC1E198950EA00475656 /* .gitmodules in Resources */ = {isa = PBXBuildFile; fileRef = 30FAFBA9198950EA00475656 /* .gitmodules */; };
 		30FAFC1F198950EA00475656 /* .travis.yml in Resources */ = {isa = PBXBuildFile; fileRef = 30FAFBAA198950EA00475656 /* .travis.yml */; };
@@ -95,48 +107,6 @@
 		30FAFC54198950EA00475656 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 30FAFC15198950EA00475656 /* InfoPlist.strings */; };
 		30FAFC55198950EA00475656 /* ObjcMongoDB-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30FAFC17198950EA00475656 /* ObjcMongoDB-Info.plist */; };
 		30FAFC56198950EA00475656 /* ObjCMongoDB.xcworkspace in Resources */ = {isa = PBXBuildFile; fileRef = 30FAFC1C198950EA00475656 /* ObjCMongoDB.xcworkspace */; };
-		30FAFE071989551800475656 /* Manifest.lock in Resources */ = {isa = PBXBuildFile; fileRef = 30FAFDA81989551800475656 /* Manifest.lock */; };
-		30FAFE081989551800475656 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 30FAFDAA1989551800475656 /* LICENSE */; };
-		30FAFE091989551800475656 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 30FAFDAB1989551800475656 /* README.md */; };
-		30FAFE0A1989551800475656 /* bcon.c in Sources */ = {isa = PBXBuildFile; fileRef = 30FAFDAD1989551800475656 /* bcon.c */; };
-		30FAFE0B1989551800475656 /* bson.c in Sources */ = {isa = PBXBuildFile; fileRef = 30FAFDAF1989551800475656 /* bson.c */; };
-		30FAFE0C1989551800475656 /* encoding.c in Sources */ = {isa = PBXBuildFile; fileRef = 30FAFDB11989551800475656 /* encoding.c */; };
-		30FAFE0D1989551800475656 /* env.c in Sources */ = {isa = PBXBuildFile; fileRef = 30FAFDB31989551800475656 /* env.c */; };
-		30FAFE0E1989551800475656 /* gridfs.c in Sources */ = {isa = PBXBuildFile; fileRef = 30FAFDB51989551800475656 /* gridfs.c */; };
-		30FAFE0F1989551800475656 /* md5.c in Sources */ = {isa = PBXBuildFile; fileRef = 30FAFDB71989551800475656 /* md5.c */; };
-		30FAFE101989551800475656 /* mongo.c in Sources */ = {isa = PBXBuildFile; fileRef = 30FAFDB91989551800475656 /* mongo.c */; };
-		30FAFE111989551800475656 /* numbers.c in Sources */ = {isa = PBXBuildFile; fileRef = 30FAFDBB1989551800475656 /* numbers.c */; };
-		30FAFE121989551800475656 /* BSON_Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FAFDBF1989551800475656 /* BSON_Helper.m */; };
-		30FAFE131989551800475656 /* BSONDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FAFDC31989551800475656 /* BSONDecoder.m */; };
-		30FAFE141989551800475656 /* BSONDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FAFDC51989551800475656 /* BSONDocument.m */; };
-		30FAFE151989551800475656 /* BSONEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FAFDC71989551800475656 /* BSONEncoder.m */; };
-		30FAFE161989551800475656 /* BSONIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FAFDC91989551800475656 /* BSONIterator.m */; };
-		30FAFE171989551800475656 /* BSONTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FAFDCB1989551800475656 /* BSONTypes.m */; };
-		30FAFE181989551800475656 /* NSData+BSONAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FAFDCD1989551800475656 /* NSData+BSONAdditions.m */; };
-		30FAFE191989551800475656 /* NSDictionary+BSONAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FAFDCF1989551800475656 /* NSDictionary+BSONAdditions.m */; };
-		30FAFE1A1989551800475656 /* NSManagedObject+BSONCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FAFDD11989551800475656 /* NSManagedObject+BSONCoding.m */; };
-		30FAFE1B1989551800475656 /* NSString+BSONAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FAFDD31989551800475656 /* NSString+BSONAdditions.m */; };
-		30FAFE1C1989551800475656 /* ObjCBSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FAFDD51989551800475656 /* ObjCBSON.m */; };
-		30FAFE1D1989551800475656 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 30FAFDD61989551800475656 /* LICENSE */; };
-		30FAFE1E1989551800475656 /* Mongo_Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FAFDD91989551800475656 /* Mongo_Helper.m */; };
-		30FAFE1F1989551800475656 /* MongoConnection+Diagnostics.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FAFDDC1989551800475656 /* MongoConnection+Diagnostics.m */; };
-		30FAFE201989551800475656 /* MongoConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FAFDDE1989551800475656 /* MongoConnection.m */; };
-		30FAFE211989551800475656 /* MongoCursor.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FAFDE01989551800475656 /* MongoCursor.m */; };
-		30FAFE221989551800475656 /* MongoDBCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FAFDE21989551800475656 /* MongoDBCollection.m */; };
-		30FAFE231989551800475656 /* MongoFindRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FAFDE41989551800475656 /* MongoFindRequest.m */; };
-		30FAFE241989551800475656 /* MongoKeyedPredicate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FAFDE61989551800475656 /* MongoKeyedPredicate.m */; };
-		30FAFE251989551800475656 /* MongoPredicate.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FAFDE81989551800475656 /* MongoPredicate.m */; };
-		30FAFE261989551800475656 /* MongoTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FAFDEA1989551800475656 /* MongoTypes.m */; };
-		30FAFE271989551800475656 /* MongoUpdateRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FAFDEC1989551800475656 /* MongoUpdateRequest.m */; };
-		30FAFE281989551800475656 /* MongoWriteConcern.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FAFDEE1989551800475656 /* MongoWriteConcern.m */; };
-		30FAFE291989551800475656 /* NSArray+MongoAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FAFDF01989551800475656 /* NSArray+MongoAdditions.m */; };
-		30FAFE2A1989551800475656 /* OrderedDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FAFDF41989551800475656 /* OrderedDictionary.m */; };
-		30FAFE2B1989551800475656 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 30FAFDF51989551800475656 /* README.md */; };
-		30FAFE2D1989551800475656 /* Pods-aggregate-acknowledgements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30FAFDF71989551800475656 /* Pods-aggregate-acknowledgements.plist */; };
-		30FAFE2E1989551800475656 /* Pods-aggregate-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FAFDF81989551800475656 /* Pods-aggregate-dummy.m */; };
-		30FAFE2F1989551800475656 /* Pods-aggregate-mongo-c-driver-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FAFDFA1989551800475656 /* Pods-aggregate-mongo-c-driver-dummy.m */; };
-		30FAFE321989551800475656 /* Pods-aggregate-ObjCMongoDB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 30FAFDFE1989551800475656 /* Pods-aggregate-ObjCMongoDB-dummy.m */; };
-		30FAFE351989551800475656 /* Pods-aggregate-resources.sh in Resources */ = {isa = PBXBuildFile; fileRef = 30FAFE021989551800475656 /* Pods-aggregate-resources.sh */; };
 		30FAFE601989581100475656 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A0EA40B19782F64007353EF /* XCTest.framework */; };
 		30FAFEA01989624800475656 /* BSONCoreDataTest.m in Resources */ = {isa = PBXBuildFile; fileRef = 30FAFBEA198950EA00475656 /* BSONCoreDataTest.m */; };
 		30FAFEA11989624800475656 /* BSONHelperTest.m in Resources */ = {isa = PBXBuildFile; fileRef = 30FAFBEB198950EA00475656 /* BSONHelperTest.m */; };
@@ -180,6 +150,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 30801CF21987FE1E009058B3;
 			remoteInfo = cocoa;
+		};
+		30AC52351989795600ECECB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30AC52151989795500ECECB6 /* test.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 30801C651987F3CE009058B3;
+			remoteInfo = test;
+		};
+		30AC52371989795600ECECB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30AC52151989795500ECECB6 /* test.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 30801C8C1987F3CF009058B3;
+			remoteInfo = testTests;
 		};
 		30FAFC5F198950EB00475656 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -337,6 +321,22 @@
 		30801D001987FE1E009058B3 /* cocoaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cocoaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30801D18198814CE009058B3 /* CategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryCell.h; sourceTree = "<group>"; };
 		30801D19198814CE009058B3 /* CategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryCell.m; sourceTree = "<group>"; };
+		30AC52071989795500ECECB6 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		30AC52081989795500ECECB6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		30AC520A1989795500ECECB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		30AC520C1989795500ECECB6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		30AC520D1989795500ECECB6 /* HomeTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTViewController.h; sourceTree = "<group>"; };
+		30AC520E1989795500ECECB6 /* HomeTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTViewController.m; sourceTree = "<group>"; };
+		30AC520F1989795500ECECB6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		30AC52101989795500ECECB6 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		30AC52111989795500ECECB6 /* MyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCell.h; sourceTree = "<group>"; };
+		30AC52121989795500ECECB6 /* MyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCell.m; sourceTree = "<group>"; };
+		30AC52131989795500ECECB6 /* test-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "test-Info.plist"; sourceTree = "<group>"; };
+		30AC52141989795500ECECB6 /* test-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "test-Prefix.pch"; sourceTree = "<group>"; };
+		30AC52151989795500ECECB6 /* test.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = test.xcodeproj; sourceTree = "<group>"; };
+		30AC521A1989795600ECECB6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		30AC521B1989795600ECECB6 /* testTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "testTests-Info.plist"; sourceTree = "<group>"; };
+		30AC521C1989795600ECECB6 /* testTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testTests.m; sourceTree = "<group>"; };
 		30FAFBA8198950EA00475656 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		30FAFBA9198950EA00475656 /* .gitmodules */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitmodules; sourceTree = "<group>"; };
 		30FAFBAA198950EA00475656 /* .travis.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
@@ -433,158 +433,6 @@
 		30FAFC18198950EA00475656 /* ObjCMongoDB_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjCMongoDB_Prefix.pch; sourceTree = "<group>"; };
 		30FAFC19198950EA00475656 /* ObjCMongoDB.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = ObjCMongoDB.xcodeproj; sourceTree = "<group>"; };
 		30FAFC1C198950EA00475656 /* ObjCMongoDB.xcworkspace */ = {isa = PBXFileReference; lastKnownFileType = wrapper.workspace; path = ObjCMongoDB.xcworkspace; sourceTree = "<group>"; };
-		30FAFD621989551800475656 /* bcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bcon.h; sourceTree = "<group>"; };
-		30FAFD631989551800475656 /* bson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bson.h; sourceTree = "<group>"; };
-		30FAFD641989551800475656 /* encoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = encoding.h; sourceTree = "<group>"; };
-		30FAFD651989551800475656 /* env.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = env.h; sourceTree = "<group>"; };
-		30FAFD661989551800475656 /* gridfs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gridfs.h; sourceTree = "<group>"; };
-		30FAFD671989551800475656 /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
-		30FAFD681989551800475656 /* mongo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mongo.h; sourceTree = "<group>"; };
-		30FAFD6A1989551800475656 /* BSON_Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSON_Helper.h; sourceTree = "<group>"; };
-		30FAFD6B1989551800475656 /* BSON_PrivateInterfaces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSON_PrivateInterfaces.h; sourceTree = "<group>"; };
-		30FAFD6C1989551800475656 /* BSONCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSONCoding.h; sourceTree = "<group>"; };
-		30FAFD6D1989551800475656 /* BSONDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSONDecoder.h; sourceTree = "<group>"; };
-		30FAFD6E1989551800475656 /* BSONDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSONDocument.h; sourceTree = "<group>"; };
-		30FAFD6F1989551800475656 /* BSONEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSONEncoder.h; sourceTree = "<group>"; };
-		30FAFD701989551800475656 /* BSONIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSONIterator.h; sourceTree = "<group>"; };
-		30FAFD711989551800475656 /* BSONTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSONTypes.h; sourceTree = "<group>"; };
-		30FAFD721989551800475656 /* Mongo_Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mongo_Helper.h; sourceTree = "<group>"; };
-		30FAFD731989551800475656 /* Mongo_PrivateInterfaces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mongo_PrivateInterfaces.h; sourceTree = "<group>"; };
-		30FAFD741989551800475656 /* MongoConnection+Diagnostics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MongoConnection+Diagnostics.h"; sourceTree = "<group>"; };
-		30FAFD751989551800475656 /* MongoConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongoConnection.h; sourceTree = "<group>"; };
-		30FAFD761989551800475656 /* MongoCursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongoCursor.h; sourceTree = "<group>"; };
-		30FAFD771989551800475656 /* MongoDBCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongoDBCollection.h; sourceTree = "<group>"; };
-		30FAFD781989551800475656 /* MongoFindRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongoFindRequest.h; sourceTree = "<group>"; };
-		30FAFD791989551800475656 /* MongoKeyedPredicate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongoKeyedPredicate.h; sourceTree = "<group>"; };
-		30FAFD7A1989551800475656 /* MongoPredicate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongoPredicate.h; sourceTree = "<group>"; };
-		30FAFD7B1989551800475656 /* MongoTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongoTypes.h; sourceTree = "<group>"; };
-		30FAFD7C1989551800475656 /* MongoUpdateRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongoUpdateRequest.h; sourceTree = "<group>"; };
-		30FAFD7D1989551800475656 /* MongoWriteConcern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongoWriteConcern.h; sourceTree = "<group>"; };
-		30FAFD7E1989551800475656 /* NSArray+MongoAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MongoAdditions.h"; sourceTree = "<group>"; };
-		30FAFD7F1989551800475656 /* NSData+BSONAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+BSONAdditions.h"; sourceTree = "<group>"; };
-		30FAFD801989551800475656 /* NSDictionary+BSONAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+BSONAdditions.h"; sourceTree = "<group>"; };
-		30FAFD811989551800475656 /* NSManagedObject+BSONCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+BSONCoding.h"; sourceTree = "<group>"; };
-		30FAFD821989551800475656 /* NSString+BSONAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BSONAdditions.h"; sourceTree = "<group>"; };
-		30FAFD831989551800475656 /* ObjCBSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjCBSON.h; sourceTree = "<group>"; };
-		30FAFD841989551800475656 /* ObjCMongoDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjCMongoDB.h; sourceTree = "<group>"; };
-		30FAFD851989551800475656 /* OrderedDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderedDictionary.h; sourceTree = "<group>"; };
-		30FAFD881989551800475656 /* bcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bcon.h; sourceTree = "<group>"; };
-		30FAFD891989551800475656 /* bson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bson.h; sourceTree = "<group>"; };
-		30FAFD8A1989551800475656 /* encoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = encoding.h; sourceTree = "<group>"; };
-		30FAFD8B1989551800475656 /* env.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = env.h; sourceTree = "<group>"; };
-		30FAFD8C1989551800475656 /* gridfs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gridfs.h; sourceTree = "<group>"; };
-		30FAFD8D1989551800475656 /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
-		30FAFD8E1989551800475656 /* mongo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mongo.h; sourceTree = "<group>"; };
-		30FAFD901989551800475656 /* BSONCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSONCoding.h; sourceTree = "<group>"; };
-		30FAFD911989551800475656 /* BSONDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSONDecoder.h; sourceTree = "<group>"; };
-		30FAFD921989551800475656 /* BSONDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSONDocument.h; sourceTree = "<group>"; };
-		30FAFD931989551800475656 /* BSONEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSONEncoder.h; sourceTree = "<group>"; };
-		30FAFD941989551800475656 /* BSONIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSONIterator.h; sourceTree = "<group>"; };
-		30FAFD951989551800475656 /* BSONTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSONTypes.h; sourceTree = "<group>"; };
-		30FAFD961989551800475656 /* MongoConnection+Diagnostics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MongoConnection+Diagnostics.h"; sourceTree = "<group>"; };
-		30FAFD971989551800475656 /* MongoConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongoConnection.h; sourceTree = "<group>"; };
-		30FAFD981989551800475656 /* MongoCursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongoCursor.h; sourceTree = "<group>"; };
-		30FAFD991989551800475656 /* MongoDBCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongoDBCollection.h; sourceTree = "<group>"; };
-		30FAFD9A1989551800475656 /* MongoFindRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongoFindRequest.h; sourceTree = "<group>"; };
-		30FAFD9B1989551800475656 /* MongoKeyedPredicate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongoKeyedPredicate.h; sourceTree = "<group>"; };
-		30FAFD9C1989551800475656 /* MongoPredicate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongoPredicate.h; sourceTree = "<group>"; };
-		30FAFD9D1989551800475656 /* MongoTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongoTypes.h; sourceTree = "<group>"; };
-		30FAFD9E1989551800475656 /* MongoUpdateRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongoUpdateRequest.h; sourceTree = "<group>"; };
-		30FAFD9F1989551800475656 /* MongoWriteConcern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongoWriteConcern.h; sourceTree = "<group>"; };
-		30FAFDA01989551800475656 /* NSArray+MongoAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MongoAdditions.h"; sourceTree = "<group>"; };
-		30FAFDA11989551800475656 /* NSData+BSONAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+BSONAdditions.h"; sourceTree = "<group>"; };
-		30FAFDA21989551800475656 /* NSDictionary+BSONAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+BSONAdditions.h"; sourceTree = "<group>"; };
-		30FAFDA31989551800475656 /* NSManagedObject+BSONCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+BSONCoding.h"; sourceTree = "<group>"; };
-		30FAFDA41989551800475656 /* NSString+BSONAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BSONAdditions.h"; sourceTree = "<group>"; };
-		30FAFDA51989551800475656 /* ObjCBSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjCBSON.h; sourceTree = "<group>"; };
-		30FAFDA61989551800475656 /* ObjCMongoDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjCMongoDB.h; sourceTree = "<group>"; };
-		30FAFDA71989551800475656 /* OrderedDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderedDictionary.h; sourceTree = "<group>"; };
-		30FAFDA81989551800475656 /* Manifest.lock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Manifest.lock; sourceTree = "<group>"; };
-		30FAFDAA1989551800475656 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		30FAFDAB1989551800475656 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		30FAFDAD1989551800475656 /* bcon.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bcon.c; sourceTree = "<group>"; };
-		30FAFDAE1989551800475656 /* bcon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bcon.h; sourceTree = "<group>"; };
-		30FAFDAF1989551800475656 /* bson.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = bson.c; sourceTree = "<group>"; };
-		30FAFDB01989551800475656 /* bson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bson.h; sourceTree = "<group>"; };
-		30FAFDB11989551800475656 /* encoding.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = encoding.c; sourceTree = "<group>"; };
-		30FAFDB21989551800475656 /* encoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = encoding.h; sourceTree = "<group>"; };
-		30FAFDB31989551800475656 /* env.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = env.c; sourceTree = "<group>"; };
-		30FAFDB41989551800475656 /* env.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = env.h; sourceTree = "<group>"; };
-		30FAFDB51989551800475656 /* gridfs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = gridfs.c; sourceTree = "<group>"; };
-		30FAFDB61989551800475656 /* gridfs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gridfs.h; sourceTree = "<group>"; };
-		30FAFDB71989551800475656 /* md5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = md5.c; sourceTree = "<group>"; };
-		30FAFDB81989551800475656 /* md5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = md5.h; sourceTree = "<group>"; };
-		30FAFDB91989551800475656 /* mongo.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mongo.c; sourceTree = "<group>"; };
-		30FAFDBA1989551800475656 /* mongo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mongo.h; sourceTree = "<group>"; };
-		30FAFDBB1989551800475656 /* numbers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = numbers.c; sourceTree = "<group>"; };
-		30FAFDBE1989551800475656 /* BSON_Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSON_Helper.h; sourceTree = "<group>"; };
-		30FAFDBF1989551800475656 /* BSON_Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSON_Helper.m; sourceTree = "<group>"; };
-		30FAFDC01989551800475656 /* BSON_PrivateInterfaces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSON_PrivateInterfaces.h; sourceTree = "<group>"; };
-		30FAFDC11989551800475656 /* BSONCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSONCoding.h; sourceTree = "<group>"; };
-		30FAFDC21989551800475656 /* BSONDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSONDecoder.h; sourceTree = "<group>"; };
-		30FAFDC31989551800475656 /* BSONDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSONDecoder.m; sourceTree = "<group>"; };
-		30FAFDC41989551800475656 /* BSONDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSONDocument.h; sourceTree = "<group>"; };
-		30FAFDC51989551800475656 /* BSONDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSONDocument.m; sourceTree = "<group>"; };
-		30FAFDC61989551800475656 /* BSONEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSONEncoder.h; sourceTree = "<group>"; };
-		30FAFDC71989551800475656 /* BSONEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSONEncoder.m; sourceTree = "<group>"; };
-		30FAFDC81989551800475656 /* BSONIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSONIterator.h; sourceTree = "<group>"; };
-		30FAFDC91989551800475656 /* BSONIterator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSONIterator.m; sourceTree = "<group>"; };
-		30FAFDCA1989551800475656 /* BSONTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSONTypes.h; sourceTree = "<group>"; };
-		30FAFDCB1989551800475656 /* BSONTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSONTypes.m; sourceTree = "<group>"; };
-		30FAFDCC1989551800475656 /* NSData+BSONAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+BSONAdditions.h"; sourceTree = "<group>"; };
-		30FAFDCD1989551800475656 /* NSData+BSONAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+BSONAdditions.m"; sourceTree = "<group>"; };
-		30FAFDCE1989551800475656 /* NSDictionary+BSONAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+BSONAdditions.h"; sourceTree = "<group>"; };
-		30FAFDCF1989551800475656 /* NSDictionary+BSONAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+BSONAdditions.m"; sourceTree = "<group>"; };
-		30FAFDD01989551800475656 /* NSManagedObject+BSONCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+BSONCoding.h"; sourceTree = "<group>"; };
-		30FAFDD11989551800475656 /* NSManagedObject+BSONCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+BSONCoding.m"; sourceTree = "<group>"; };
-		30FAFDD21989551800475656 /* NSString+BSONAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+BSONAdditions.h"; sourceTree = "<group>"; };
-		30FAFDD31989551800475656 /* NSString+BSONAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+BSONAdditions.m"; sourceTree = "<group>"; };
-		30FAFDD41989551800475656 /* ObjCBSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjCBSON.h; sourceTree = "<group>"; };
-		30FAFDD51989551800475656 /* ObjCBSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjCBSON.m; sourceTree = "<group>"; };
-		30FAFDD61989551800475656 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		30FAFDD81989551800475656 /* Mongo_Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mongo_Helper.h; sourceTree = "<group>"; };
-		30FAFDD91989551800475656 /* Mongo_Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mongo_Helper.m; sourceTree = "<group>"; };
-		30FAFDDA1989551800475656 /* Mongo_PrivateInterfaces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mongo_PrivateInterfaces.h; sourceTree = "<group>"; };
-		30FAFDDB1989551800475656 /* MongoConnection+Diagnostics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MongoConnection+Diagnostics.h"; sourceTree = "<group>"; };
-		30FAFDDC1989551800475656 /* MongoConnection+Diagnostics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MongoConnection+Diagnostics.m"; sourceTree = "<group>"; };
-		30FAFDDD1989551800475656 /* MongoConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongoConnection.h; sourceTree = "<group>"; };
-		30FAFDDE1989551800475656 /* MongoConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MongoConnection.m; sourceTree = "<group>"; };
-		30FAFDDF1989551800475656 /* MongoCursor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongoCursor.h; sourceTree = "<group>"; };
-		30FAFDE01989551800475656 /* MongoCursor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MongoCursor.m; sourceTree = "<group>"; };
-		30FAFDE11989551800475656 /* MongoDBCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongoDBCollection.h; sourceTree = "<group>"; };
-		30FAFDE21989551800475656 /* MongoDBCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MongoDBCollection.m; sourceTree = "<group>"; };
-		30FAFDE31989551800475656 /* MongoFindRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongoFindRequest.h; sourceTree = "<group>"; };
-		30FAFDE41989551800475656 /* MongoFindRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MongoFindRequest.m; sourceTree = "<group>"; };
-		30FAFDE51989551800475656 /* MongoKeyedPredicate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongoKeyedPredicate.h; sourceTree = "<group>"; };
-		30FAFDE61989551800475656 /* MongoKeyedPredicate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MongoKeyedPredicate.m; sourceTree = "<group>"; };
-		30FAFDE71989551800475656 /* MongoPredicate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongoPredicate.h; sourceTree = "<group>"; };
-		30FAFDE81989551800475656 /* MongoPredicate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MongoPredicate.m; sourceTree = "<group>"; };
-		30FAFDE91989551800475656 /* MongoTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongoTypes.h; sourceTree = "<group>"; };
-		30FAFDEA1989551800475656 /* MongoTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MongoTypes.m; sourceTree = "<group>"; };
-		30FAFDEB1989551800475656 /* MongoUpdateRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongoUpdateRequest.h; sourceTree = "<group>"; };
-		30FAFDEC1989551800475656 /* MongoUpdateRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MongoUpdateRequest.m; sourceTree = "<group>"; };
-		30FAFDED1989551800475656 /* MongoWriteConcern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MongoWriteConcern.h; sourceTree = "<group>"; };
-		30FAFDEE1989551800475656 /* MongoWriteConcern.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MongoWriteConcern.m; sourceTree = "<group>"; };
-		30FAFDEF1989551800475656 /* NSArray+MongoAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MongoAdditions.h"; sourceTree = "<group>"; };
-		30FAFDF01989551800475656 /* NSArray+MongoAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MongoAdditions.m"; sourceTree = "<group>"; };
-		30FAFDF11989551800475656 /* ObjCMongoDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjCMongoDB.h; sourceTree = "<group>"; };
-		30FAFDF31989551800475656 /* OrderedDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderedDictionary.h; sourceTree = "<group>"; };
-		30FAFDF41989551800475656 /* OrderedDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderedDictionary.m; sourceTree = "<group>"; };
-		30FAFDF51989551800475656 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		30FAFDF61989551800475656 /* Pods-aggregate-acknowledgements.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Pods-aggregate-acknowledgements.markdown"; sourceTree = "<group>"; };
-		30FAFDF71989551800475656 /* Pods-aggregate-acknowledgements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Pods-aggregate-acknowledgements.plist"; sourceTree = "<group>"; };
-		30FAFDF81989551800475656 /* Pods-aggregate-dummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Pods-aggregate-dummy.m"; sourceTree = "<group>"; };
-		30FAFDF91989551800475656 /* Pods-aggregate-environment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Pods-aggregate-environment.h"; sourceTree = "<group>"; };
-		30FAFDFA1989551800475656 /* Pods-aggregate-mongo-c-driver-dummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Pods-aggregate-mongo-c-driver-dummy.m"; sourceTree = "<group>"; };
-		30FAFDFB1989551800475656 /* Pods-aggregate-mongo-c-driver-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Pods-aggregate-mongo-c-driver-prefix.pch"; sourceTree = "<group>"; };
-		30FAFDFC1989551800475656 /* Pods-aggregate-mongo-c-driver-Private.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Pods-aggregate-mongo-c-driver-Private.xcconfig"; sourceTree = "<group>"; };
-		30FAFDFD1989551800475656 /* Pods-aggregate-mongo-c-driver.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Pods-aggregate-mongo-c-driver.xcconfig"; sourceTree = "<group>"; };
-		30FAFDFE1989551800475656 /* Pods-aggregate-ObjCMongoDB-dummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Pods-aggregate-ObjCMongoDB-dummy.m"; sourceTree = "<group>"; };
-		30FAFDFF1989551800475656 /* Pods-aggregate-ObjCMongoDB-prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Pods-aggregate-ObjCMongoDB-prefix.pch"; sourceTree = "<group>"; };
-		30FAFE001989551800475656 /* Pods-aggregate-ObjCMongoDB-Private.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Pods-aggregate-ObjCMongoDB-Private.xcconfig"; sourceTree = "<group>"; };
-		30FAFE011989551800475656 /* Pods-aggregate-ObjCMongoDB.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Pods-aggregate-ObjCMongoDB.xcconfig"; sourceTree = "<group>"; };
-		30FAFE021989551800475656 /* Pods-aggregate-resources.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "Pods-aggregate-resources.sh"; sourceTree = "<group>"; };
-		30FAFE031989551800475656 /* Pods-aggregate.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "Pods-aggregate.xcconfig"; sourceTree = "<group>"; };
 		30FAFE041989551800475656 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		30FAFE5E1989580800475656 /* libsystem_sandbox.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsystem_sandbox.dylib; path = usr/lib/system/libsystem_sandbox.dylib; sourceTree = SDKROOT; };
 		5A0EA3EF19782F64007353EF /* aggregate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aggregate.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -676,6 +524,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30AC52051989795500ECECB6 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				30AC52061989795500ECECB6 /* test */,
+				30AC52151989795500ECECB6 /* test.xcodeproj */,
+				30AC52181989795600ECECB6 /* testTests */,
+			);
+			name = test;
+			path = ../../gilt/test;
+			sourceTree = "<group>";
+		};
+		30AC52061989795500ECECB6 /* test */ = {
+			isa = PBXGroup;
+			children = (
+				30AC52071989795500ECECB6 /* AppDelegate.h */,
+				30AC52081989795500ECECB6 /* AppDelegate.m */,
+				30AC52091989795500ECECB6 /* Main.storyboard */,
+				30AC520B1989795500ECECB6 /* InfoPlist.strings */,
+				30AC520D1989795500ECECB6 /* HomeTViewController.h */,
+				30AC520E1989795500ECECB6 /* HomeTViewController.m */,
+				30AC520F1989795500ECECB6 /* Images.xcassets */,
+				30AC52101989795500ECECB6 /* main.m */,
+				30AC52111989795500ECECB6 /* MyCell.h */,
+				30AC52121989795500ECECB6 /* MyCell.m */,
+				30AC52131989795500ECECB6 /* test-Info.plist */,
+				30AC52141989795500ECECB6 /* test-Prefix.pch */,
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		30AC52161989795500ECECB6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30AC52361989795600ECECB6 /* test.app */,
+				30AC52381989795600ECECB6 /* testTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30AC52181989795600ECECB6 /* testTests */ = {
+			isa = PBXGroup;
+			children = (
+				30AC52191989795600ECECB6 /* InfoPlist.strings */,
+				30AC521B1989795600ECECB6 /* testTests-Info.plist */,
+				30AC521C1989795600ECECB6 /* testTests.m */,
+			);
+			path = testTests;
+			sourceTree = "<group>";
+		};
 		30FAFBA7198950EA00475656 /* ObjCMongoDB-master */ = {
 			isa = PBXGroup;
 			children = (
@@ -890,261 +787,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		30FAFD5F1989551800475656 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				30FAFD601989551800475656 /* BuildHeaders */,
-				30FAFD861989551800475656 /* Headers */,
-				30FAFDA81989551800475656 /* Manifest.lock */,
-				30FAFDA91989551800475656 /* mongo-c-driver */,
-				30FAFDBC1989551800475656 /* ObjCMongoDB */,
-				30FAFDF61989551800475656 /* Pods-aggregate-acknowledgements.markdown */,
-				30FAFDF71989551800475656 /* Pods-aggregate-acknowledgements.plist */,
-				30FAFDF81989551800475656 /* Pods-aggregate-dummy.m */,
-				30FAFDF91989551800475656 /* Pods-aggregate-environment.h */,
-				30FAFDFA1989551800475656 /* Pods-aggregate-mongo-c-driver-dummy.m */,
-				30FAFDFB1989551800475656 /* Pods-aggregate-mongo-c-driver-prefix.pch */,
-				30FAFDFC1989551800475656 /* Pods-aggregate-mongo-c-driver-Private.xcconfig */,
-				30FAFDFD1989551800475656 /* Pods-aggregate-mongo-c-driver.xcconfig */,
-				30FAFDFE1989551800475656 /* Pods-aggregate-ObjCMongoDB-dummy.m */,
-				30FAFDFF1989551800475656 /* Pods-aggregate-ObjCMongoDB-prefix.pch */,
-				30FAFE001989551800475656 /* Pods-aggregate-ObjCMongoDB-Private.xcconfig */,
-				30FAFE011989551800475656 /* Pods-aggregate-ObjCMongoDB.xcconfig */,
-				30FAFE021989551800475656 /* Pods-aggregate-resources.sh */,
-				30FAFE031989551800475656 /* Pods-aggregate.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		30FAFD601989551800475656 /* BuildHeaders */ = {
-			isa = PBXGroup;
-			children = (
-				30FAFD611989551800475656 /* mongo-c-driver */,
-				30FAFD691989551800475656 /* ObjCMongoDB */,
-			);
-			path = BuildHeaders;
-			sourceTree = "<group>";
-		};
-		30FAFD611989551800475656 /* mongo-c-driver */ = {
-			isa = PBXGroup;
-			children = (
-				30FAFD621989551800475656 /* bcon.h */,
-				30FAFD631989551800475656 /* bson.h */,
-				30FAFD641989551800475656 /* encoding.h */,
-				30FAFD651989551800475656 /* env.h */,
-				30FAFD661989551800475656 /* gridfs.h */,
-				30FAFD671989551800475656 /* md5.h */,
-				30FAFD681989551800475656 /* mongo.h */,
-			);
-			path = "mongo-c-driver";
-			sourceTree = "<group>";
-		};
-		30FAFD691989551800475656 /* ObjCMongoDB */ = {
-			isa = PBXGroup;
-			children = (
-				30FAFD6A1989551800475656 /* BSON_Helper.h */,
-				30FAFD6B1989551800475656 /* BSON_PrivateInterfaces.h */,
-				30FAFD6C1989551800475656 /* BSONCoding.h */,
-				30FAFD6D1989551800475656 /* BSONDecoder.h */,
-				30FAFD6E1989551800475656 /* BSONDocument.h */,
-				30FAFD6F1989551800475656 /* BSONEncoder.h */,
-				30FAFD701989551800475656 /* BSONIterator.h */,
-				30FAFD711989551800475656 /* BSONTypes.h */,
-				30FAFD721989551800475656 /* Mongo_Helper.h */,
-				30FAFD731989551800475656 /* Mongo_PrivateInterfaces.h */,
-				30FAFD741989551800475656 /* MongoConnection+Diagnostics.h */,
-				30FAFD751989551800475656 /* MongoConnection.h */,
-				30FAFD761989551800475656 /* MongoCursor.h */,
-				30FAFD771989551800475656 /* MongoDBCollection.h */,
-				30FAFD781989551800475656 /* MongoFindRequest.h */,
-				30FAFD791989551800475656 /* MongoKeyedPredicate.h */,
-				30FAFD7A1989551800475656 /* MongoPredicate.h */,
-				30FAFD7B1989551800475656 /* MongoTypes.h */,
-				30FAFD7C1989551800475656 /* MongoUpdateRequest.h */,
-				30FAFD7D1989551800475656 /* MongoWriteConcern.h */,
-				30FAFD7E1989551800475656 /* NSArray+MongoAdditions.h */,
-				30FAFD7F1989551800475656 /* NSData+BSONAdditions.h */,
-				30FAFD801989551800475656 /* NSDictionary+BSONAdditions.h */,
-				30FAFD811989551800475656 /* NSManagedObject+BSONCoding.h */,
-				30FAFD821989551800475656 /* NSString+BSONAdditions.h */,
-				30FAFD831989551800475656 /* ObjCBSON.h */,
-				30FAFD841989551800475656 /* ObjCMongoDB.h */,
-				30FAFD851989551800475656 /* OrderedDictionary.h */,
-			);
-			path = ObjCMongoDB;
-			sourceTree = "<group>";
-		};
-		30FAFD861989551800475656 /* Headers */ = {
-			isa = PBXGroup;
-			children = (
-				30FAFD871989551800475656 /* mongo-c-driver */,
-				30FAFD8F1989551800475656 /* ObjCMongoDB */,
-			);
-			path = Headers;
-			sourceTree = "<group>";
-		};
-		30FAFD871989551800475656 /* mongo-c-driver */ = {
-			isa = PBXGroup;
-			children = (
-				30FAFD881989551800475656 /* bcon.h */,
-				30FAFD891989551800475656 /* bson.h */,
-				30FAFD8A1989551800475656 /* encoding.h */,
-				30FAFD8B1989551800475656 /* env.h */,
-				30FAFD8C1989551800475656 /* gridfs.h */,
-				30FAFD8D1989551800475656 /* md5.h */,
-				30FAFD8E1989551800475656 /* mongo.h */,
-			);
-			path = "mongo-c-driver";
-			sourceTree = "<group>";
-		};
-		30FAFD8F1989551800475656 /* ObjCMongoDB */ = {
-			isa = PBXGroup;
-			children = (
-				30FAFD901989551800475656 /* BSONCoding.h */,
-				30FAFD911989551800475656 /* BSONDecoder.h */,
-				30FAFD921989551800475656 /* BSONDocument.h */,
-				30FAFD931989551800475656 /* BSONEncoder.h */,
-				30FAFD941989551800475656 /* BSONIterator.h */,
-				30FAFD951989551800475656 /* BSONTypes.h */,
-				30FAFD961989551800475656 /* MongoConnection+Diagnostics.h */,
-				30FAFD971989551800475656 /* MongoConnection.h */,
-				30FAFD981989551800475656 /* MongoCursor.h */,
-				30FAFD991989551800475656 /* MongoDBCollection.h */,
-				30FAFD9A1989551800475656 /* MongoFindRequest.h */,
-				30FAFD9B1989551800475656 /* MongoKeyedPredicate.h */,
-				30FAFD9C1989551800475656 /* MongoPredicate.h */,
-				30FAFD9D1989551800475656 /* MongoTypes.h */,
-				30FAFD9E1989551800475656 /* MongoUpdateRequest.h */,
-				30FAFD9F1989551800475656 /* MongoWriteConcern.h */,
-				30FAFDA01989551800475656 /* NSArray+MongoAdditions.h */,
-				30FAFDA11989551800475656 /* NSData+BSONAdditions.h */,
-				30FAFDA21989551800475656 /* NSDictionary+BSONAdditions.h */,
-				30FAFDA31989551800475656 /* NSManagedObject+BSONCoding.h */,
-				30FAFDA41989551800475656 /* NSString+BSONAdditions.h */,
-				30FAFDA51989551800475656 /* ObjCBSON.h */,
-				30FAFDA61989551800475656 /* ObjCMongoDB.h */,
-				30FAFDA71989551800475656 /* OrderedDictionary.h */,
-			);
-			path = ObjCMongoDB;
-			sourceTree = "<group>";
-		};
-		30FAFDA91989551800475656 /* mongo-c-driver */ = {
-			isa = PBXGroup;
-			children = (
-				30FAFDAA1989551800475656 /* LICENSE */,
-				30FAFDAB1989551800475656 /* README.md */,
-				30FAFDAC1989551800475656 /* src */,
-			);
-			path = "mongo-c-driver";
-			sourceTree = "<group>";
-		};
-		30FAFDAC1989551800475656 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				30FAFDAD1989551800475656 /* bcon.c */,
-				30FAFDAE1989551800475656 /* bcon.h */,
-				30FAFDAF1989551800475656 /* bson.c */,
-				30FAFDB01989551800475656 /* bson.h */,
-				30FAFDB11989551800475656 /* encoding.c */,
-				30FAFDB21989551800475656 /* encoding.h */,
-				30FAFDB31989551800475656 /* env.c */,
-				30FAFDB41989551800475656 /* env.h */,
-				30FAFDB51989551800475656 /* gridfs.c */,
-				30FAFDB61989551800475656 /* gridfs.h */,
-				30FAFDB71989551800475656 /* md5.c */,
-				30FAFDB81989551800475656 /* md5.h */,
-				30FAFDB91989551800475656 /* mongo.c */,
-				30FAFDBA1989551800475656 /* mongo.h */,
-				30FAFDBB1989551800475656 /* numbers.c */,
-			);
-			path = src;
-			sourceTree = "<group>";
-		};
-		30FAFDBC1989551800475656 /* ObjCMongoDB */ = {
-			isa = PBXGroup;
-			children = (
-				30FAFDBD1989551800475656 /* BSON */,
-				30FAFDD61989551800475656 /* LICENSE */,
-				30FAFDD71989551800475656 /* Mongo */,
-				30FAFDF21989551800475656 /* OrderedDictionary */,
-				30FAFDF51989551800475656 /* README.md */,
-			);
-			path = ObjCMongoDB;
-			sourceTree = "<group>";
-		};
-		30FAFDBD1989551800475656 /* BSON */ = {
-			isa = PBXGroup;
-			children = (
-				30FAFDBE1989551800475656 /* BSON_Helper.h */,
-				30FAFDBF1989551800475656 /* BSON_Helper.m */,
-				30FAFDC01989551800475656 /* BSON_PrivateInterfaces.h */,
-				30FAFDC11989551800475656 /* BSONCoding.h */,
-				30FAFDC21989551800475656 /* BSONDecoder.h */,
-				30FAFDC31989551800475656 /* BSONDecoder.m */,
-				30FAFDC41989551800475656 /* BSONDocument.h */,
-				30FAFDC51989551800475656 /* BSONDocument.m */,
-				30FAFDC61989551800475656 /* BSONEncoder.h */,
-				30FAFDC71989551800475656 /* BSONEncoder.m */,
-				30FAFDC81989551800475656 /* BSONIterator.h */,
-				30FAFDC91989551800475656 /* BSONIterator.m */,
-				30FAFDCA1989551800475656 /* BSONTypes.h */,
-				30FAFDCB1989551800475656 /* BSONTypes.m */,
-				30FAFDCC1989551800475656 /* NSData+BSONAdditions.h */,
-				30FAFDCD1989551800475656 /* NSData+BSONAdditions.m */,
-				30FAFDCE1989551800475656 /* NSDictionary+BSONAdditions.h */,
-				30FAFDCF1989551800475656 /* NSDictionary+BSONAdditions.m */,
-				30FAFDD01989551800475656 /* NSManagedObject+BSONCoding.h */,
-				30FAFDD11989551800475656 /* NSManagedObject+BSONCoding.m */,
-				30FAFDD21989551800475656 /* NSString+BSONAdditions.h */,
-				30FAFDD31989551800475656 /* NSString+BSONAdditions.m */,
-				30FAFDD41989551800475656 /* ObjCBSON.h */,
-				30FAFDD51989551800475656 /* ObjCBSON.m */,
-			);
-			path = BSON;
-			sourceTree = "<group>";
-		};
-		30FAFDD71989551800475656 /* Mongo */ = {
-			isa = PBXGroup;
-			children = (
-				30FAFDD81989551800475656 /* Mongo_Helper.h */,
-				30FAFDD91989551800475656 /* Mongo_Helper.m */,
-				30FAFDDA1989551800475656 /* Mongo_PrivateInterfaces.h */,
-				30FAFDDB1989551800475656 /* MongoConnection+Diagnostics.h */,
-				30FAFDDC1989551800475656 /* MongoConnection+Diagnostics.m */,
-				30FAFDDD1989551800475656 /* MongoConnection.h */,
-				30FAFDDE1989551800475656 /* MongoConnection.m */,
-				30FAFDDF1989551800475656 /* MongoCursor.h */,
-				30FAFDE01989551800475656 /* MongoCursor.m */,
-				30FAFDE11989551800475656 /* MongoDBCollection.h */,
-				30FAFDE21989551800475656 /* MongoDBCollection.m */,
-				30FAFDE31989551800475656 /* MongoFindRequest.h */,
-				30FAFDE41989551800475656 /* MongoFindRequest.m */,
-				30FAFDE51989551800475656 /* MongoKeyedPredicate.h */,
-				30FAFDE61989551800475656 /* MongoKeyedPredicate.m */,
-				30FAFDE71989551800475656 /* MongoPredicate.h */,
-				30FAFDE81989551800475656 /* MongoPredicate.m */,
-				30FAFDE91989551800475656 /* MongoTypes.h */,
-				30FAFDEA1989551800475656 /* MongoTypes.m */,
-				30FAFDEB1989551800475656 /* MongoUpdateRequest.h */,
-				30FAFDEC1989551800475656 /* MongoUpdateRequest.m */,
-				30FAFDED1989551800475656 /* MongoWriteConcern.h */,
-				30FAFDEE1989551800475656 /* MongoWriteConcern.m */,
-				30FAFDEF1989551800475656 /* NSArray+MongoAdditions.h */,
-				30FAFDF01989551800475656 /* NSArray+MongoAdditions.m */,
-				30FAFDF11989551800475656 /* ObjCMongoDB.h */,
-			);
-			path = Mongo;
-			sourceTree = "<group>";
-		};
-		30FAFDF21989551800475656 /* OrderedDictionary */ = {
-			isa = PBXGroup;
-			children = (
-				30FAFDF31989551800475656 /* OrderedDictionary.h */,
-				30FAFDF41989551800475656 /* OrderedDictionary.m */,
-			);
-			path = OrderedDictionary;
-			sourceTree = "<group>";
-		};
 		30FAFE4D1989577B00475656 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -1158,8 +800,8 @@
 		5A0EA3E619782F64007353EF = {
 			isa = PBXGroup;
 			children = (
+				30AC52051989795500ECECB6 /* test */,
 				30FAFE041989551800475656 /* Pods.xcodeproj */,
-				30FAFD5F1989551800475656 /* Pods */,
 				30FAFBA7198950EA00475656 /* ObjCMongoDB-master */,
 				5A0EA3F819782F64007353EF /* aggregate */,
 				5A0EA41119782F64007353EF /* aggregateTests */,
@@ -1408,6 +1050,7 @@
 			knownRegions = (
 				en,
 				English,
+				Base,
 			);
 			mainGroup = 5A0EA3E619782F64007353EF;
 			productRefGroup = 5A0EA3F019782F64007353EF /* Products */;
@@ -1421,6 +1064,10 @@
 					ProductGroup = 30FAFE4D1989577B00475656 /* Products */;
 					ProjectRef = 30FAFE041989551800475656 /* Pods.xcodeproj */;
 				},
+				{
+					ProductGroup = 30AC52161989795500ECECB6 /* Products */;
+					ProjectRef = 30AC52151989795500ECECB6 /* test.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -1433,6 +1080,20 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		30AC52361989795600ECECB6 /* test.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = test.app;
+			remoteRef = 30AC52351989795600ECECB6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		30AC52381989795600ECECB6 /* testTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = testTests.xctest;
+			remoteRef = 30AC52371989795600ECECB6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		30FAFC60198950EB00475656 /* ObjCMongoDB.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -1524,11 +1185,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30AC530219897B0200ECECB6 /* Main.storyboard in Resources */,
 				30FAFEA01989624800475656 /* BSONCoreDataTest.m in Resources */,
 				30FAFEA11989624800475656 /* BSONHelperTest.m in Resources */,
 				30FAFEA31989624800475656 /* BSONTest.m in Resources */,
 				30FAFEA51989624800475656 /* CDPerson.m in Resources */,
 				30FAFEA61989624800475656 /* CoreDataTests.xcdatamodeld in Resources */,
+				30AC521F1989795600ECECB6 /* InfoPlist.strings in Resources */,
 				30FAFEA81989624800475656 /* CommandTest.m in Resources */,
 				30FAFEA91989624800475656 /* FindTest.m in Resources */,
 				30FAFEAA1989624800475656 /* GetLastErrorTest.m in Resources */,
@@ -1537,27 +1200,24 @@
 				30FAFEB01989624800475656 /* UpdateTest.m in Resources */,
 				30FAFC43198950EA00475656 /* InfoPlist.strings in Resources */,
 				30801CC91987F449009058B3 /* information3.png in Resources */,
+				30AC52241989795600ECECB6 /* test-Info.plist in Resources */,
 				30FAFC50198950EA00475656 /* BSON-Info.plist in Resources */,
 				30FAFC1F198950EA00475656 /* .travis.yml in Resources */,
 				301121791986D9EE00FC3A53 /* shorts.png in Resources */,
-				30FAFE2D1989551800475656 /* Pods-aggregate-acknowledgements.plist in Resources */,
 				30FAFC54198950EA00475656 /* InfoPlist.strings in Resources */,
 				30FAFC4E198950EA00475656 /* InfoPlist.strings in Resources */,
 				3011217B1986D9EE00FC3A53 /* swim.png in Resources */,
 				3011216E1986D9D800FC3A53 /* heart68.png in Resources */,
 				30801CD31987F449009058B3 /* social38.png in Resources */,
 				3011216F1986D9D800FC3A53 /* heart72.png in Resources */,
+				30AC52211989795600ECECB6 /* Images.xcassets in Resources */,
 				30FAFC3F198950EA00475656 /* BSONTest-Info.plist in Resources */,
 				30FAFC3B198950EA00475656 /* Rakefile in Resources */,
 				309EB6FA1981802B00A6E534 /* Main.storyboard in Resources */,
 				30FAFC39198950EA00475656 /* ObjCMongoDB.podspec in Resources */,
 				5AD5236619796B2700DCA331 /* settings.png in Resources */,
 				30FAFC4F198950EA00475656 /* MongoTests-iOS-Info.plist in Resources */,
-				30FAFE2B1989551800475656 /* README.md in Resources */,
 				30FAFC51198950EA00475656 /* InfoPlist.strings in Resources */,
-				30FAFE081989551800475656 /* LICENSE in Resources */,
-				30FAFE091989551800475656 /* README.md in Resources */,
-				30FAFE071989551800475656 /* Manifest.lock in Resources */,
 				30FAFC47198950EA00475656 /* InfoPlist.strings in Resources */,
 				30FAFC53198950EA00475656 /* MongoTests copy-Info.plist in Resources */,
 				5AD525DA197EC9BE00DCA331 /* tops4.jpg in Resources */,
@@ -1570,8 +1230,7 @@
 				5AD5235E197851E800DCA331 /* tops.jpg in Resources */,
 				30801CD61987F449009058B3 /* tools3.png in Resources */,
 				30FAFC44198950EA00475656 /* BSONTests-iOS-Info.plist in Resources */,
-				30FAFE1D1989551800475656 /* LICENSE in Resources */,
-				30FAFE351989551800475656 /* Pods-aggregate-resources.sh in Resources */,
+				30AC52251989795600ECECB6 /* InfoPlist.strings in Resources */,
 				30FAFC4B198950EA00475656 /* MongoTests-Info.plist in Resources */,
 				5A0EA3FD19782F64007353EF /* InfoPlist.strings in Resources */,
 				5AD5236219785E1000DCA331 /* skirts.jpg in Resources */,
@@ -1586,6 +1245,7 @@
 				5AD52360197856B600DCA331 /* dresses.jpg in Resources */,
 				30FAFC1E198950EA00475656 /* .gitmodules in Resources */,
 				3011203419869B0800FC3A53 /* Settings.bundle in Resources */,
+				30AC52261989795600ECECB6 /* testTests-Info.plist in Resources */,
 				5A0EA40519782F64007353EF /* Images.xcassets in Resources */,
 				30801CCE1987F449009058B3 /* plus19.png in Resources */,
 				5AD5236819796D2F00DCA331 /* hearts.png in Resources */,
@@ -1655,49 +1315,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30AC523919897A7C00ECECB6 /* Main.storyboard in Sources */,
 				30FAFC40198950EA00475656 /* BSONTest.m in Sources */,
 				30FAFC26198950EA00475656 /* NSData+BSONAdditions.m in Sources */,
 				30FAFC23198950EA00475656 /* BSONEncoder.m in Sources */,
-				30FAFE2E1989551800475656 /* Pods-aggregate-dummy.m in Sources */,
 				30FAFC3A198950EA00475656 /* OrderedDictionary.m in Sources */,
-				30FAFE271989551800475656 /* MongoUpdateRequest.m in Sources */,
-				30FAFE151989551800475656 /* BSONEncoder.m in Sources */,
-				30FAFE231989551800475656 /* MongoFindRequest.m in Sources */,
-				30FAFE1B1989551800475656 /* NSString+BSONAdditions.m in Sources */,
 				30801D1A198814CF009058B3 /* CategoryCell.m in Sources */,
+				30AC52201989795600ECECB6 /* HomeTViewController.m in Sources */,
 				30FAFC4C198950EA00475656 /* PredicateTest.m in Sources */,
-				30FAFE241989551800475656 /* MongoKeyedPredicate.m in Sources */,
-				30FAFE131989551800475656 /* BSONDecoder.m in Sources */,
 				30FAFC46198950EA00475656 /* CommandTest.m in Sources */,
-				30FAFE0B1989551800475656 /* bson.c in Sources */,
 				30FAFC2A198950EA00475656 /* ObjCBSON.m in Sources */,
 				30FAFC37198950EA00475656 /* MongoWriteConcern.m in Sources */,
 				30FAFC28198950EA00475656 /* NSManagedObject+BSONCoding.m in Sources */,
 				301121631986D9A600FC3A53 /* xyzAppDelegate.m in Sources */,
 				30FAFC24198950EA00475656 /* BSONIterator.m in Sources */,
-				30FAFE221989551800475656 /* MongoDBCollection.m in Sources */,
 				30FAFC35198950EA00475656 /* MongoTypes.m in Sources */,
-				30FAFE2F1989551800475656 /* Pods-aggregate-mongo-c-driver-dummy.m in Sources */,
+				30AC52271989795600ECECB6 /* testTests.m in Sources */,
 				30FAFC30198950EA00475656 /* MongoCursor.m in Sources */,
-				30FAFE281989551800475656 /* MongoWriteConcern.m in Sources */,
-				30FAFE111989551800475656 /* numbers.c in Sources */,
 				30FAFC33198950EA00475656 /* MongoKeyedPredicate.m in Sources */,
-				30FAFE0E1989551800475656 /* gridfs.c in Sources */,
-				30FAFE0F1989551800475656 /* md5.c in Sources */,
+				30AC52221989795600ECECB6 /* main.m in Sources */,
 				30FAFC4D198950EA00475656 /* UpdateTest.m in Sources */,
 				30FAFC42198950EA00475656 /* CoreDataTests.xcdatamodeld in Sources */,
-				30FAFE1F1989551800475656 /* MongoConnection+Diagnostics.m in Sources */,
-				30FAFE141989551800475656 /* BSONDocument.m in Sources */,
-				30FAFE1E1989551800475656 /* Mongo_Helper.m in Sources */,
 				30FAFC20198950EA00475656 /* BSON_Helper.m in Sources */,
 				30FAFC21198950EA00475656 /* BSONDecoder.m in Sources */,
-				30FAFE0C1989551800475656 /* encoding.c in Sources */,
-				30FAFE321989551800475656 /* Pods-aggregate-ObjCMongoDB-dummy.m in Sources */,
 				30FAFC34198950EA00475656 /* MongoPredicate.m in Sources */,
 				30FAFC31198950EA00475656 /* MongoDBCollection.m in Sources */,
-				30FAFE261989551800475656 /* MongoTypes.m in Sources */,
-				30FAFE1C1989551800475656 /* ObjCBSON.m in Sources */,
-				30FAFE201989551800475656 /* MongoConnection.m in Sources */,
 				301121651986D9A600FC3A53 /* HomeViewController.m in Sources */,
 				30FAFC38198950EA00475656 /* NSArray+MongoAdditions.m in Sources */,
 				30FAFC49198950EA00475656 /* GetLastErrorTest.m in Sources */,
@@ -1706,29 +1348,18 @@
 				30FAFC29198950EA00475656 /* NSString+BSONAdditions.m in Sources */,
 				30FAFC3D198950EA00475656 /* BSONCoreDataTest.m in Sources */,
 				30FAFC2F198950EA00475656 /* MongoConnection.m in Sources */,
-				30FAFE171989551800475656 /* BSONTypes.m in Sources */,
-				30FAFE0A1989551800475656 /* bcon.c in Sources */,
 				30FAFC25198950EA00475656 /* BSONTypes.m in Sources */,
 				30FAFC32198950EA00475656 /* MongoFindRequest.m in Sources */,
+				30AC521D1989795600ECECB6 /* AppDelegate.m in Sources */,
 				301121671986D9A600FC3A53 /* MyCollectionViewController.m in Sources */,
-				30FAFE181989551800475656 /* NSData+BSONAdditions.m in Sources */,
-				30FAFE121989551800475656 /* BSON_Helper.m in Sources */,
 				30FAFC22198950EA00475656 /* BSONDocument.m in Sources */,
 				30FAFC2D198950EA00475656 /* Mongo_Helper.m in Sources */,
 				30FAFC48198950EA00475656 /* FindTest.m in Sources */,
-				30FAFE251989551800475656 /* MongoPredicate.m in Sources */,
-				30FAFE101989551800475656 /* mongo.c in Sources */,
 				30FAFC2E198950EA00475656 /* MongoConnection+Diagnostics.m in Sources */,
-				30FAFE1A1989551800475656 /* NSManagedObject+BSONCoding.m in Sources */,
-				30FAFE291989551800475656 /* NSArray+MongoAdditions.m in Sources */,
 				30FAFC36198950EA00475656 /* MongoUpdateRequest.m in Sources */,
-				30FAFE161989551800475656 /* BSONIterator.m in Sources */,
-				30FAFE211989551800475656 /* MongoCursor.m in Sources */,
-				30FAFE191989551800475656 /* NSDictionary+BSONAdditions.m in Sources */,
+				30AC52231989795600ECECB6 /* MyCell.m in Sources */,
 				3011216A1986D9A600FC3A53 /* MyCollectionViewCell.m in Sources */,
 				30FAFC41198950EA00475656 /* CDPerson.m in Sources */,
-				30FAFE0D1989551800475656 /* env.c in Sources */,
-				30FAFE2A1989551800475656 /* OrderedDictionary.m in Sources */,
 				30FAFC27198950EA00475656 /* NSDictionary+BSONAdditions.m in Sources */,
 				30801CA41987F3F3009058B3 /* main.m in Sources */,
 			);
@@ -1758,6 +1389,30 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		30AC52091989795500ECECB6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30AC520A1989795500ECECB6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		30AC520B1989795500ECECB6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30AC520C1989795500ECECB6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		30AC52191989795600ECECB6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30AC521A1989795600ECECB6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		30FAFBF3198950EA00475656 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -1965,7 +1620,6 @@
 		};
 		5A0EA41C19782F64007353EF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03202EE6B0CD411281D80D9C /* Pods-aggregate.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -2005,7 +1659,6 @@
 		};
 		5A0EA41D19782F64007353EF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 03202EE6B0CD411281D80D9C /* Pods-aggregate.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
