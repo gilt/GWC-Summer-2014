@@ -1,8 +1,8 @@
 //
 //  xyzAppDelegate.h
-//  ObjCMongoDB
+//  aggregate
 //
-//  Created by Kelsey Wong on 7/21/14.
+//  Created by Kelsey Wong on 7/17/14.
 //  Copyright (c) 2014 Gilt. All rights reserved.
 //
 

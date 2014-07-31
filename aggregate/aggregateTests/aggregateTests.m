@@ -1,18 +1,18 @@
 //
-//  ObjCMongoDBTests.m
-//  ObjCMongoDBTests
+//  aggregateTests.m
+//  aggregateTests
 //
-//  Created by Kelsey Wong on 7/21/14.
+//  Created by Kelsey Wong on 7/17/14.
 //  Copyright (c) 2014 Gilt. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface ObjCMongoDBTests : XCTestCase
+@interface aggregateTests : XCTestCase
 
 @end
 
-@implementation ObjCMongoDBTests
+@implementation aggregateTests
 
 - (void)setUp
 {

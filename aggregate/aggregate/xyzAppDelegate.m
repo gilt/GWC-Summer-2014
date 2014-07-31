@@ -1,8 +1,8 @@
 //
 //  xyzAppDelegate.m
-//  ObjCMongoDB
+//  aggregate
 //
-//  Created by Kelsey Wong on 7/21/14.
+//  Created by Kelsey Wong on 7/17/14.
 //  Copyright (c) 2014 Gilt. All rights reserved.
 //
 
@@ -12,10 +12,26 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    // self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
+    // self.window.backgroundColor = [UIColor whiteColor];
+    // [self.window makeKeyAndVisible];
+    
+//    NSArray *keys = [NSArray arrayWithObjects:@"name", @"brand", @"price", @"image", @"url", nil];
+    
+    
+//    NSMutableArray *objs = [NSMutableArray arrayWithObjects:allclothes[0][@"name"], allclothes[0][@"brand"], allclothes[0][@"price"], allclothes[0][@"image"], allclothes[0][@"purchaseUrl"], nil];
+//    NSLog(@"fetch result: %@", objs);
+    
+    
+/*    for (int i=0; i<[allclothes count]; i++) {
+        NSMutableArray *objs = [NSMutableArray arrayWithObjects:allclothes[i].name, allclothes[i].brand, allclothes[i].price, allclothes[i].image, allclothes[i].purchaseUrl, nil];
+        NSDictionary *[@"ng"+[i]] = [NSDictionary dictionaryWithObjects:objs forKeys:keys];
+        [objs removeAllObjects];
+    }
+ 
+ */
+    
     return YES;
 }
 

@@ -8,8 +8,6 @@
 
 #import "xyzAppDelegate.h"
 
-#import "ObjCMongoDB.h"
-
 @implementation xyzAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -19,23 +17,20 @@
     // self.window.backgroundColor = [UIColor whiteColor];
     // [self.window makeKeyAndVisible];
     
-    NSArray *keys = [NSArray arrayWithObjects:@"name", @"brand", @"price", @"image", @"url", nil];
-    
-    //set up database connection
-    NSError *error = nil;
-    MongoConnection *dbConn = [MongoConnection connectionForServer:@"127.0.0.1" error:&error];
-    MongoDBCollection *collection = [dbConn collectionWithName:@"gilt.products2"];
+//    NSArray *keys = [NSArray arrayWithObjects:@"name", @"brand", @"price", @"image", @"url", nil];
     
     
-    //fetching data from mongo
-    //trying to fetch all objects from collection
-    BSONDocument *resultDoc = [collection findAllWithError:&error];
-    NSArray *allclothes = [collection findAllWithError:&error];
-    for (BSONDocument *resultDoc in allclothes){
-        NSDictionary *result = [BSONDecoder decodeDictionaryWithDocument:resultDoc];
-        NSLog(@"fetch result: %@", result);
+//    NSMutableArray *objs = [NSMutableArray arrayWithObjects:allclothes[0][@"name"], allclothes[0][@"brand"], allclothes[0][@"price"], allclothes[0][@"image"], allclothes[0][@"purchaseUrl"], nil];
+//    NSLog(@"fetch result: %@", objs);
+    
+    
+/*    for (int i=0; i<[allclothes count]; i++) {
+        NSMutableArray *objs = [NSMutableArray arrayWithObjects:allclothes[i].name, allclothes[i].brand, allclothes[i].price, allclothes[i].image, allclothes[i].purchaseUrl, nil];
+        NSDictionary *[@"ng"+[i]] = [NSDictionary dictionaryWithObjects:objs forKeys:keys];
+        [objs removeAllObjects];
     }
-    
+ 
+ */
     
     return YES;
 }
