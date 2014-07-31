@@ -64,6 +64,7 @@
 		5AD525D9197EC9BE00DCA331 /* tops3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5AD525D5197EC9BE00DCA331 /* tops3.jpg */; };
 		5AD525DA197EC9BE00DCA331 /* tops4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5AD525D6197EC9BE00DCA331 /* tops4.jpg */; };
 		5AD525DD197ED48A00DCA331 /* MyCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AD525DC197ED48A00DCA331 /* MyCollectionViewCell.m */; };
+		5AD54240198AC2CB00DCA331 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AD5423F198AC2CB00DCA331 /* HomeVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -177,6 +178,8 @@
 		5AD525D6197EC9BE00DCA331 /* tops4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tops4.jpg; sourceTree = SOURCE_ROOT; };
 		5AD525DB197ED48A00DCA331 /* MyCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyCollectionViewCell.h; path = ../MyCollectionViewCell.h; sourceTree = "<group>"; };
 		5AD525DC197ED48A00DCA331 /* MyCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyCollectionViewCell.m; path = ../MyCollectionViewCell.m; sourceTree = "<group>"; };
+		5AD5423E198AC2CB00DCA331 /* HomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
+		5AD5423F198AC2CB00DCA331 /* HomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +249,8 @@
 				5AD525CE197EC64400DCA331 /* MyCollectionViewController.m */,
 				5AD525DB197ED48A00DCA331 /* MyCollectionViewCell.h */,
 				5AD525DC197ED48A00DCA331 /* MyCollectionViewCell.m */,
+				5AD5423E198AC2CB00DCA331 /* HomeVC.h */,
+				5AD5423F198AC2CB00DCA331 /* HomeVC.m */,
 				5AD525D3197EC9BE00DCA331 /* tops1.jpg */,
 				5AD525D4197EC9BE00DCA331 /* tops2.jpg */,
 				5AD525D5197EC9BE00DCA331 /* tops3.jpg */,
@@ -531,6 +536,7 @@
 				5AD52579197D84E600DCA331 /* encoding.c in Sources */,
 				5A0EA3FF19782F64007353EF /* main.m in Sources */,
 				5AD525BC197D859E00DCA331 /* NSDictionary+BSONAdditions.m in Sources */,
+				5AD54240198AC2CB00DCA331 /* HomeVC.m in Sources */,
 				5AD5257D197D84E600DCA331 /* numbers.c in Sources */,
 				5AD525C7197D859E00DCA331 /* MongoPredicate.m in Sources */,
 				5AD525C4197D859E00DCA331 /* MongoDBCollection.m in Sources */,

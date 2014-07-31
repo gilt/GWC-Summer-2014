@@ -25,23 +25,26 @@
     return self;
 }
 
-- (void)viewDidLoad
+- (void)setUpDB:(int)category
 {
-    NSLog(@"view did load");
-    
     //set up database connection
     NSError *error = nil;
     MongoConnection *dbConn = [MongoConnection connectionForServer:@"kahana.mongohq.com:10025/gilt" error:&error];
     [dbConn authenticate:@"gilt" username:@"francesca" password:@"harrison" error:&error];
     MongoDBCollection *collection = [dbConn collectionWithName:@"gilt.products"];
+    MongoKeyedPredicate *predicate = [MongoKeyedPredicate predicate];
     
     
-    NSArray *allclothes = [collection findAllWithError:&error];
-    
-    [super viewDidLoad];
-    
+    if (category == 1){
+        [predicate keyPath:@"category" matches:@"tops"];
+        NSArray *allclothes = [collection findWithPredicate:predicate error:&error];
+    }
+    else {
+        NSArray *allclothes = [collection findAllWithError:&error];
+    }
     
     int movingIndex = 0;
+    
     _maxLoad = 14;
         // at all times, the app has stored product info (name, etc.) for 14 items
     _maxView = 6;
@@ -50,12 +53,13 @@
     int currentRow = 0;
         // viewable rows: 0, 1, 2 (aka 1st, 2nd, 3rd rows)
         // hidden rows: {above: [-2,-1]}, {below: [3,4]}
+
     
-    
-    // initially clear the product info arrays so that they are not infinitely appended to
+        // initially clear the product info arrays so that they are not infinitely appended to
     _clothesNames = [[NSMutableArray alloc] initWithCapacity:_maxLoad];
     _clothesPics = [[NSMutableArray alloc] initWithCapacity:_maxLoad];
     _clothesPrices = [[NSMutableArray alloc] initWithCapacity:_maxLoad];
+
     
         // retrieve 14 items at a time, to display on the page
         // (FUTURE:) dynamically update arrays as the user scrolls, to conserve data storage/usage
@@ -71,6 +75,12 @@
         [_clothesPrices addObject:prix];
         movingIndex++;
     }
+}
+
+- (void)viewDidLoad
+{
+    
+    [super viewDidLoad];
     
 }
 
@@ -91,7 +101,7 @@
 
 - (int)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return _maxView;
+    return 14;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
@@ -101,11 +111,8 @@
     UIImage *image;
     int row = [indexPath row];
     
-//    image = [UIImage imageNamed:[NSString stringWithFormat:@"%@", _clothesPics[row]]];
-    
     image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[_clothesPics objectAtIndex:row]]]];
 
-    
     myCell.imageView.image = image;
     myCell.prodName.text = _clothesNames[row];
     myCell.prodPrice.text = _clothesPrices[row];
