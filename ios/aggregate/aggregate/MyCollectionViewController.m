@@ -42,22 +42,25 @@
     
     
     int movingIndex = 0;
-    _maxDisplay = 6;
+    _maxLoad = 14;
+        // at all times, the app has stored product info (name, etc.) for 14 items
+    _maxView = 6;
         // max # of products that can be simultaneously viewed on page
         // however, this also means 3 rows so the array must be updated two objects at a time
     int currentRow = 0;
-        // possible rows: 0, 1, 2 (aka 1st, 2nd, 3rd rows)
+        // viewable rows: 0, 1, 2 (aka 1st, 2nd, 3rd rows)
+        // hidden rows: {above: [-2,-1]}, {below: [3,4]}
     
     
     // initially clear the product info arrays so that they are not infinitely appended to
-    _clothesNames = [[NSMutableArray alloc] initWithCapacity:12];
-    _clothesPics = [[NSMutableArray alloc] initWithCapacity:12];
-    _clothesPrices = [[NSMutableArray alloc] initWithCapacity:12];
+    _clothesNames = [[NSMutableArray alloc] initWithCapacity:_maxLoad];
+    _clothesPics = [[NSMutableArray alloc] initWithCapacity:_maxLoad];
+    _clothesPrices = [[NSMutableArray alloc] initWithCapacity:_maxLoad];
     
-        // retrieve 12 items at a time, to display on the page
+        // retrieve 14 items at a time, to display on the page
         // (FUTURE:) dynamically update arrays as the user scrolls, to conserve data storage/usage
     
-    for (int i=0; i<12; i++)
+    for (int i=0; i<_maxLoad; i++)
     {
         NSDictionary *result = [BSONDecoder decodeDictionaryWithDocument:[allclothes objectAtIndex:movingIndex]];
         NSString *name = [result objectForKey:@"name"];
@@ -69,12 +72,6 @@
         movingIndex++;
     }
     
-    
-//    _clothesPics = [@[@"tops1.jpg",
-//                      @"tops2.jpg",
-//                      @"tops3.jpg",
-//                      @"tops4.jpg"] mutableCopy];
-//    _clothesNames = [@[@"sweater", @"shirt", @"peplum", @"tee"] mutableCopy];
 }
 
 - (void)didReceiveMemoryWarning
@@ -94,7 +91,7 @@
 
 - (int)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return _maxDisplay;
+    return _maxView;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
@@ -117,15 +114,9 @@
 }
 
 
-/*
--(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+- (void)viewableProducts
 {
-    UIImage *image;
-    int row = [indexPath row];
     
-    image = [UIImage imageNamed:_clothesPics[row]];
-    
-    return image.size;
 }
 
 
@@ -138,8 +129,6 @@
     
     [segue destinationViewController];
 }
- 
- */
 
 
 @end
