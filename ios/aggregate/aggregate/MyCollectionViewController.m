@@ -35,21 +35,8 @@
     [dbConn authenticate:@"gilt" username:@"francesca" password:@"harrison" error:&error];
     MongoDBCollection *collection = [dbConn collectionWithName:@"gilt.products"];
     
-//    NSMutableArray *displayPics = [NSMutableArray array];
-//    NSMutableArray *displayNames = [NSMutableArray array];
-        //array of product names for the selected category
-    
     
     NSArray *allclothes = [collection findAllWithError:&error];
-    
-            // this retrieves ALL BSON Document objects in products database
-/*    for (BSONDocument *resultDoc in allclothes){
-        NSDictionary *result = [BSONDecoder decodeDictionaryWithDocument:resultDoc];
-        [displayNames addObject:[result objectForKey:@"name"]];
-        [displayPics addObject:[result objectForKey:@"image"]];
-        NSLog(@"fetch result: %@", result);
-    }
-*/
     
     [super viewDidLoad];
     
@@ -65,6 +52,7 @@
     // initially clear the product info arrays so that they are not infinitely appended to
     _clothesNames = [[NSMutableArray alloc] initWithCapacity:12];
     _clothesPics = [[NSMutableArray alloc] initWithCapacity:12];
+    _clothesPrices = [[NSMutableArray alloc] initWithCapacity:12];
     
         // retrieve 12 items at a time, to display on the page
         // (FUTURE:) dynamically update arrays as the user scrolls, to conserve data storage/usage
@@ -76,6 +64,8 @@
         [_clothesNames addObject:name];
         NSString *img = [result objectForKey:@"image"];
         [_clothesPics addObject:img];
+        NSString *prix = [result objectForKey:@"price"];
+        [_clothesPrices addObject:prix];
         movingIndex++;
     }
     
@@ -121,6 +111,7 @@
     
     myCell.imageView.image = image;
     myCell.prodName.text = _clothesNames[row];
+    myCell.prodPrice.text = _clothesPrices[row];
     
     return myCell;
 }

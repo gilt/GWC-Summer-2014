@@ -14,6 +14,7 @@
 
 @property (strong,nonatomic) NSMutableArray *clothesPics;
 @property (strong,nonatomic) NSMutableArray *clothesNames;
+@property (strong,nonatomic) NSMutableArray *clothesPrices;
 @property (assign) int maxDisplay;
 @property (weak, nonatomic) IBOutlet UILabel *categoryHeader;
 

@@ -11,6 +11,7 @@
 @interface MyCollectionViewCell : UICollectionViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UILabel *prodName;
+@property (weak, nonatomic) IBOutlet UILabel *prodPrice;
 
 
 @end
