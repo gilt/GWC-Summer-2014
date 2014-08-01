@@ -18,7 +18,7 @@
 @property (assign) int maxLoad;
 @property (assign) int maxView;
 
--(void)setUpDBWithArray:(NSArray *)allclothes;
+-(MyCollectionViewController *)setUpDBWithArray:(NSArray *)allclothes;
 
 
 @end

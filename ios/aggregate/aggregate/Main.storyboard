@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="0Rj-B7-X9i">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="0Rj-B7-X9i">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -343,6 +343,7 @@
                                             <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                         <connections>
+                                            <action selector="allU:" destination="O9H-Oz-ZZU" eventType="touchUpInside" id="l9E-Sg-bof"/>
                                             <segue destination="92m-hL-rwC" kind="push" identifier="all" id="wmR-rM-BJV"/>
                                         </connections>
                                     </button>
@@ -354,6 +355,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="topsU:" destination="O9H-Oz-ZZU" eventType="touchUpInside" id="dB4-ZY-wmN"/>
                                             <segue destination="92m-hL-rwC" kind="push" identifier="tops" id="iGU-yg-DW1"/>
                                         </connections>
                                     </button>
@@ -371,6 +373,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="dressesU:" destination="O9H-Oz-ZZU" eventType="touchUpInside" id="SUh-nD-1as"/>
                                             <segue destination="92m-hL-rwC" kind="push" identifier="dresses" id="bng-7v-ace"/>
                                         </connections>
                                     </button>
@@ -389,6 +392,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="skirtsU:" destination="O9H-Oz-ZZU" eventType="touchUpInside" id="nZK-KF-aMV"/>
                                             <segue destination="92m-hL-rwC" kind="push" identifier="skirts" id="T9b-SA-HsG"/>
                                         </connections>
                                     </button>
@@ -406,6 +410,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
+                                            <action selector="pantsU:" destination="O9H-Oz-ZZU" eventType="touchUpInside" id="vgX-Dg-mTG"/>
                                             <segue destination="92m-hL-rwC" kind="push" identifier="pants" id="1Po-Gt-hPN"/>
                                         </connections>
                                     </button>
@@ -597,9 +602,9 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="2vK-X3-pfF"/>
-        <segue reference="wmR-rM-BJV"/>
-        <segue reference="oS5-xr-okQ"/>
         <segue reference="2AT-s1-nhh"/>
+        <segue reference="2vK-X3-pfF"/>
+        <segue reference="iGU-yg-DW1"/>
+        <segue reference="oS5-xr-okQ"/>
     </inferredMetricsTieBreakers>
 </document>

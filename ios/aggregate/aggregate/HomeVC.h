@@ -7,7 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MyCollectionViewController.h"
 
 @interface HomeVC : UIViewController
+- (IBAction)topsU:(id)sender;
+- (IBAction)dressesU:(id)sender;
+- (IBAction)skirtsU:(id)sender;
+- (IBAction)pantsU:(id)sender;
+- (IBAction)allU:(id)sender;
+
+@property (assign) MyCollectionViewController *SpecVC;
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender;
+
 
 @end

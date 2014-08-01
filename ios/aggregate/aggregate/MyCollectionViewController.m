@@ -25,8 +25,9 @@
     return self;
 }
 
-- (void)setUpDBWithArray:(NSArray *)allclothes
+- (MyCollectionViewController *)setUpDBWithArray:(NSArray *)allclothes
 {
+    
     int movingIndex = 0;
     
     _maxLoad = 14;
@@ -59,11 +60,12 @@
         [_clothesPrices addObject:prix];
         movingIndex++;
     }
+    
+    return self;
 }
 
 - (void)viewDidLoad
 {
-    
     [super viewDidLoad];
     
 }
@@ -85,7 +87,7 @@
 
 - (int)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 14;
+    return _maxLoad;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
@@ -100,6 +102,7 @@
     myCell.imageView.image = image;
     myCell.prodName.text = _clothesNames[row];
     myCell.prodPrice.text = _clothesPrices[row];
+    
     
     return myCell;
 }
@@ -118,7 +121,7 @@
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
     
-    [segue destinationViewController];
+    // [segue destinationViewController];
 }
 
 
