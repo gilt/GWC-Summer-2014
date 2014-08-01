@@ -25,24 +25,8 @@
     return self;
 }
 
-- (void)setUpDB:(int)category
+- (void)setUpDBWithArray:(NSArray *)allclothes
 {
-    //set up database connection
-    NSError *error = nil;
-    MongoConnection *dbConn = [MongoConnection connectionForServer:@"kahana.mongohq.com:10025/gilt" error:&error];
-    [dbConn authenticate:@"gilt" username:@"francesca" password:@"harrison" error:&error];
-    MongoDBCollection *collection = [dbConn collectionWithName:@"gilt.products"];
-    MongoKeyedPredicate *predicate = [MongoKeyedPredicate predicate];
-    
-    
-    if (category == 1){
-        [predicate keyPath:@"category" matches:@"tops"];
-        NSArray *allclothes = [collection findWithPredicate:predicate error:&error];
-    }
-    else {
-        NSArray *allclothes = [collection findAllWithError:&error];
-    }
-    
     int movingIndex = 0;
     
     _maxLoad = 14;
