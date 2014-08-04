@@ -8,7 +8,8 @@
 
 #import "MyCollectionViewController.h"
 #import "ObjCMongoDB.h"
-
+#import "HomeVC.h"
+#import "UIImageView+WebCache.h"
 @interface MyCollectionViewController ()
 
 @end
@@ -25,8 +26,15 @@
     return self;
 }
 
-- (MyCollectionViewController *)setUpDBWithArray:(NSArray *)allclothes
+- (void) getInfo:(NSArray *)allclothes{
+    for(int j=0; j<[allclothes count]; j++){
+        [_allclothes addObject:[allclothes objectAtIndex:j]];
+    }
+}
+
+- (void)setUpDBWithArray:(NSArray *)allclothes
 {
+    NSLog(@"i went into my collection vc class method");
     
     int movingIndex = 0;
     
@@ -39,6 +47,10 @@
         // viewable rows: 0, 1, 2 (aka 1st, 2nd, 3rd rows)
         // hidden rows: {above: [-2,-1]}, {below: [3,4]}
 
+    
+    [_clothesNames removeAllObjects];
+    [_clothesPics removeAllObjects];
+    [_clothesPrices removeAllObjects];
     
         // initially clear the product info arrays so that they are not infinitely appended to
     _clothesNames = [[NSMutableArray alloc] initWithCapacity:_maxLoad];
@@ -61,11 +73,12 @@
         movingIndex++;
     }
     
-    return self;
+
 }
 
 - (void)viewDidLoad
 {
+    // [self setUpDBWithArray:_allclothes];
     [super viewDidLoad];
     
 }
@@ -96,21 +109,16 @@
     
     UIImage *image;
     int row = [indexPath row];
-    
+    // [myCell.imageView sd_setImageWithURL:[NSURL URLWithString:[_clothesPics objectAtIndex:row]]
+                        // placeholderImage:[UIImage imageNamed:@"placeholder.png"]];
     image = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[_clothesPics objectAtIndex:row]]]];
 
     myCell.imageView.image = image;
     myCell.prodName.text = _clothesNames[row];
     myCell.prodPrice.text = _clothesPrices[row];
-    
+    NSLog(@"updating display");
     
     return myCell;
-}
-
-
-- (void)viewableProducts
-{
-    
 }
 
 

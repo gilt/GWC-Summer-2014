@@ -9,16 +9,20 @@
 #import <UIKit/UIKit.h>
 #import "MyCollectionViewCell.h"
 
+
 @interface MyCollectionViewController : UICollectionViewController
 <UICollectionViewDataSource, UICollectionViewDelegate>
 
 @property (strong,nonatomic) NSMutableArray *clothesPics;
 @property (strong,nonatomic) NSMutableArray *clothesNames;
 @property (strong,nonatomic) NSMutableArray *clothesPrices;
+@property (strong,nonatomic) NSMutableArray *allclothes;
 @property (assign) int maxLoad;
 @property (assign) int maxView;
 
--(MyCollectionViewController *)setUpDBWithArray:(NSArray *)allclothes;
+-(void)setUpDBWithArray:(NSArray *)allclothes;
+-(void)getInfo:(NSArray *)allclothes;
+
 
 
 @end

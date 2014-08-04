@@ -337,26 +337,26 @@
                                     <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V6h-ca-Tj9">
                                         <rect key="frame" x="12" y="380" width="256" height="64"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <accessibility key="accessibilityConfiguration" label="all"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="27"/>
-                                        <state key="normal" title="VIEW ALL">
-                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        <state key="normal" title="all">
+                                            <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
                                         <connections>
-                                            <action selector="allU:" destination="O9H-Oz-ZZU" eventType="touchUpInside" id="l9E-Sg-bof"/>
-                                            <segue destination="92m-hL-rwC" kind="push" identifier="all" id="wmR-rM-BJV"/>
+                                            <segue destination="92m-hL-rwC" kind="push" identifier="all" id="xWn-i6-1P9"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bue-Jr-eU1">
                                         <rect key="frame" x="12" y="0.0" width="120" height="180"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button" backgroundImage="tops.jpg">
+                                        <accessibility key="accessibilityConfiguration" label="tops"/>
+                                        <state key="normal" title="tops" backgroundImage="tops.jpg">
                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="topsU:" destination="O9H-Oz-ZZU" eventType="touchUpInside" id="dB4-ZY-wmN"/>
-                                            <segue destination="92m-hL-rwC" kind="push" identifier="tops" id="iGU-yg-DW1"/>
+                                            <segue destination="92m-hL-rwC" kind="push" identifier="tops" id="Oq1-Cs-HNf"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TOPS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HaY-2j-egf">
@@ -368,13 +368,13 @@
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q49-rc-zX6">
                                         <rect key="frame" x="148" y="0.0" width="120" height="180"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button" backgroundImage="dresses.jpg">
+                                        <accessibility key="accessibilityConfiguration" label="dresses"/>
+                                        <state key="normal" title="dresses" backgroundImage="dresses.jpg">
                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="dressesU:" destination="O9H-Oz-ZZU" eventType="touchUpInside" id="SUh-nD-1as"/>
-                                            <segue destination="92m-hL-rwC" kind="push" identifier="dresses" id="bng-7v-ace"/>
+                                            <segue destination="92m-hL-rwC" kind="push" identifier="dresses" id="FFT-RG-b9Z"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DRESSES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qW5-ha-YUX">
@@ -387,13 +387,13 @@
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="01c-e6-0D0">
                                         <rect key="frame" x="12" y="192" width="120" height="180"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button" backgroundImage="skirts.jpg">
+                                        <accessibility key="accessibilityConfiguration" label="skirts"/>
+                                        <state key="normal" title="skirts" backgroundImage="skirts.jpg">
                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="skirtsU:" destination="O9H-Oz-ZZU" eventType="touchUpInside" id="nZK-KF-aMV"/>
-                                            <segue destination="92m-hL-rwC" kind="push" identifier="skirts" id="T9b-SA-HsG"/>
+                                            <segue destination="92m-hL-rwC" kind="push" identifier="skirts" id="hlb-Zh-HYg"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SKIRTS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KAh-dl-yFY">
@@ -405,19 +405,26 @@
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nrg-2Q-nLE">
                                         <rect key="frame" x="148" y="192" width="120" height="180"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button" backgroundImage="pants.jpg">
+                                        <accessibility key="accessibilityConfiguration" label="pants"/>
+                                        <state key="normal" title="pants" backgroundImage="pants.jpg">
                                             <color key="titleColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="pantsU:" destination="O9H-Oz-ZZU" eventType="touchUpInside" id="vgX-Dg-mTG"/>
-                                            <segue destination="92m-hL-rwC" kind="push" identifier="pants" id="1Po-Gt-hPN"/>
+                                            <segue destination="92m-hL-rwC" kind="push" identifier="pants" id="Rq4-is-fMq"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PANTS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KPR-aY-je6">
                                         <rect key="frame" x="162" y="271" width="92" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="VIEW ALL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ba2-Kj-qmq">
+                                        <rect key="frame" x="41" y="401" width="198" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -445,72 +452,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ehd-N9-JcU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-39" y="379"/>
-        </scene>
-        <!--View Controller - Tops-->
-        <scene sceneID="5Zy-04-bHv">
-            <objects>
-                <viewController title="Tops" id="DI8-ci-slF" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="VMT-eq-p8e"/>
-                        <viewControllerLayoutGuide type="bottom" id="K6O-pk-Svh"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="GjG-Mj-Doq">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <searchBar contentMode="redraw" fixedFrame="YES" searchBarStyle="minimal" text="" placeholder="Search all..." translatesAutoresizingMaskIntoConstraints="NO" id="If6-8O-WQT">
-                                <rect key="frame" x="0.0" y="91" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MD9-F4-Huk">
-                                <rect key="frame" x="95" y="30" width="130" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <state key="normal" title="Fashion Finds">
-                                    <color key="titleColor" red="0.4713925169" green="0.5288316837" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="O9H-Oz-ZZU" kind="push" id="2vK-X3-pfF"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DNC-Th-Qpc">
-                                <rect key="frame" x="270" y="30" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="hearts.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="xTK-Ln-iYv" kind="push" id="JgM-8v-Dc5"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3SU-tP-V4s">
-                                <rect key="frame" x="13" y="27" width="35" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="settings.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="YoU-hR-VG3" kind="push" id="YSL-iU-nRy"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CLOTHES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u1a-8U-sA2">
-                                <rect key="frame" x="0.0" y="70" width="320" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.83733855749999997" blue="0.90840967490000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="4Ze-zG-TUx"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eXG-4c-eSf" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="632" y="1098"/>
         </scene>
         <!--My Collection View Controller-->
         <scene sceneID="ZGo-lg-b7x">
@@ -570,7 +511,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q1Q-So-J4w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="550" y="379"/>
+            <point key="canvasLocation" x="586" y="379"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="q7G-kJ-jaq">
@@ -602,9 +543,9 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="Rq4-is-fMq"/>
+        <segue reference="sXT-FX-0F1"/>
         <segue reference="2AT-s1-nhh"/>
-        <segue reference="2vK-X3-pfF"/>
-        <segue reference="iGU-yg-DW1"/>
         <segue reference="oS5-xr-okQ"/>
     </inferredMetricsTieBreakers>
 </document>
