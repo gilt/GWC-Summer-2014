@@ -20,10 +20,6 @@
 		5A0EA41619782F64007353EF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5A0EA41419782F64007353EF /* InfoPlist.strings */; };
 		5A0EA41819782F64007353EF /* aggregateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A0EA41719782F64007353EF /* aggregateTests.m */; };
 		5A0EA422197840BE007353EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A0EA421197840BE007353EF /* Main.storyboard */; };
-		5ABF1E5C198FE41A002AD36A /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 5ABF1E0A198FE419002AD36A /* .gitignore */; };
-		5ABF1E5D198FE41A002AD36A /* .gitmodules in Resources */ = {isa = PBXBuildFile; fileRef = 5ABF1E0B198FE419002AD36A /* .gitmodules */; };
-		5ABF1E69198FE41A002AD36A /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 5ABF1E24198FE419002AD36A /* LICENSE */; };
-		5ABF1E6A198FE41A002AD36A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5ABF1E25198FE419002AD36A /* README.md */; };
 		5ABF1E6B198FE41A002AD36A /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ABF1E28198FE419002AD36A /* MKAnnotationView+WebCache.m */; };
 		5ABF1E6C198FE41A002AD36A /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ABF1E2A198FE419002AD36A /* NSData+ImageContentType.m */; };
 		5ABF1E6D198FE41A002AD36A /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ABF1E2C198FE419002AD36A /* SDImageCache.m */; };
@@ -117,10 +113,6 @@
 		5A0EA41519782F64007353EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5A0EA41719782F64007353EF /* aggregateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = aggregateTests.m; sourceTree = "<group>"; };
 		5A0EA421197840BE007353EF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		5ABF1E0A198FE419002AD36A /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		5ABF1E0B198FE419002AD36A /* .gitmodules */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitmodules; sourceTree = "<group>"; };
-		5ABF1E24198FE419002AD36A /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		5ABF1E25198FE419002AD36A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		5ABF1E27198FE419002AD36A /* MKAnnotationView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKAnnotationView+WebCache.h"; sourceTree = "<group>"; };
 		5ABF1E28198FE419002AD36A /* MKAnnotationView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKAnnotationView+WebCache.m"; sourceTree = "<group>"; };
 		5ABF1E29198FE419002AD36A /* NSData+ImageContentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ImageContentType.h"; sourceTree = "<group>"; };
@@ -366,10 +358,6 @@
 		5ABF1E09198FE419002AD36A /* SDWebImage-master */ = {
 			isa = PBXGroup;
 			children = (
-				5ABF1E0A198FE419002AD36A /* .gitignore */,
-				5ABF1E0B198FE419002AD36A /* .gitmodules */,
-				5ABF1E24198FE419002AD36A /* LICENSE */,
-				5ABF1E25198FE419002AD36A /* README.md */,
 				5ABF1E26198FE419002AD36A /* SDWebImage */,
 				5ABF1E48198FE419002AD36A /* SDWebImage.podspec */,
 				5ABF1E5A198FE41A002AD36A /* Vendors */,
@@ -615,16 +603,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5ABF1E5C198FE41A002AD36A /* .gitignore in Resources */,
 				5AD5236619796B2700DCA331 /* settings.png in Resources */,
 				5A0EA422197840BE007353EF /* Main.storyboard in Resources */,
-				5ABF1E6A198FE41A002AD36A /* README.md in Resources */,
 				5ABF1E94198FE521002AD36A /* placeholder.png in Resources */,
 				5AD525DA197EC9BE00DCA331 /* tops4.jpg in Resources */,
 				5AD523701979840500DCA331 /* home.png in Resources */,
 				5AD5235E197851E800DCA331 /* tops.jpg in Resources */,
 				5AD525D8197EC9BE00DCA331 /* tops2.jpg in Resources */,
-				5ABF1E69198FE41A002AD36A /* LICENSE in Resources */,
 				5A0EA3FD19782F64007353EF /* InfoPlist.strings in Resources */,
 				5AD5236219785E1000DCA331 /* skirts.jpg in Resources */,
 				5AD52364197964F700DCA331 /* pants.jpg in Resources */,
@@ -633,7 +618,6 @@
 				5ABF1E7B198FE41A002AD36A /* SDWebImage.podspec in Resources */,
 				5AD52360197856B600DCA331 /* dresses.jpg in Resources */,
 				5A0EA40519782F64007353EF /* Images.xcassets in Resources */,
-				5ABF1E5D198FE41A002AD36A /* .gitmodules in Resources */,
 				5AD5236819796D2F00DCA331 /* hearts.png in Resources */,
 				5AD525D7197EC9BE00DCA331 /* tops1.jpg in Resources */,
 			);

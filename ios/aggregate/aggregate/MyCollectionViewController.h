@@ -21,8 +21,6 @@
 @property (assign) int maxView;
 
 -(void)setUpDBWithArray:(NSArray *)allclothes;
--(void)getInfo:(NSArray *)allclothes;
-
 
 
 @end

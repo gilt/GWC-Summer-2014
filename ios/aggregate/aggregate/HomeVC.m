@@ -45,11 +45,10 @@
 
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
+
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    MyCollectionViewController *SpecVC;
-    SpecVC = [[MyCollectionViewController alloc] init];
-    
+    MyCollectionViewController *SpecVC = [segue destinationViewController];
     
     //set up database connection
     NSError *error = nil;
@@ -59,19 +58,15 @@
     NSArray *allclothes;
     allclothes = [[NSArray alloc] init];
     
-    NSLog(@"set up db connection");
     
-    
-    // first condition is always if the user selected "view all"
-    // adjust if more categories are added!!
+        // first condition is always if the user selected "view all"
+        // adjust if more categories are added!!
     if ([sender tag] == 5){
         allclothes = [collection findAllWithError:&error];
         [SpecVC setUpDBWithArray:allclothes];
         
     } else {
         MongoKeyedPredicate *predicate = [MongoKeyedPredicate predicate];
-        
-        NSLog(@"checking category");
         
         if ([sender tag] == 1)
         {
@@ -81,7 +76,6 @@
         if ([sender tag] == 2)
         {
             [predicate keyPath:@"category" matches:@"dresses"];
-            
         }
         
         if ([sender tag] == 3)
@@ -94,21 +88,11 @@
             [predicate keyPath:@"category" matches:@"pants"];
         }
         
-
-        //allclothes = [[collection cursorForFindWithPredicate:predicate error:&error] allObjects];
-        
-        
-        NSLog(@"gonna set up collection view controller");
         
         allclothes = [collection findWithPredicate:predicate error:&error];
-        
         [SpecVC setUpDBWithArray:allclothes];
         
     }
-
-    
-    
-    SpecVC = [segue destinationViewController];
 
 
 }
