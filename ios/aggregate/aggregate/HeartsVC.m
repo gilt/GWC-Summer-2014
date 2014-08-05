@@ -26,19 +26,25 @@
     return self;
 }
 
-- (void)setUpDisplay:(NSArray *)clothesPics withDB:(MongoDBCollection*)collection
+- (void)setUpDisplay:(NSArray *)allclothes
 {
-    for (int i=0; i<[clothesPics count]; i++)
+    _maxLoad = [allclothes count];
+    
+    [_clothesNames removeAllObjects];
+    [_heartPics removeAllObjects];
+    [_clothesPrices removeAllObjects];
+    
+    _clothesNames = [[NSMutableArray alloc] initWithCapacity:_maxLoad];
+    _heartPics = [[NSMutableArray alloc] initWithCapacity:_maxLoad];
+    _clothesPrices = [[NSMutableArray alloc] initWithCapacity:_maxLoad];
+    
+    for (int i=0; i<[allclothes count]; i++)
     {
-        [_heartPics addObject:clothesPics[i]];
-        MongoKeyedPredicate *predicate = [MongoKeyedPredicate predicate];
-        [predicate keyPath:@"image" matches:clothesPics[i]];
-        NSError *error = nil;
-        BSONDocument *resultDoc = [collection findOneWithPredicate:predicate error:&error];
-        NSDictionary *result = [BSONDecoder decodeDictionaryWithDocument:resultDoc];
+        NSDictionary *result = [BSONDecoder decodeDictionaryWithDocument:[allclothes objectAtIndex:i]];
         [_clothesNames addObject:(NSString*)[result objectForKey:@"name"]];
+        [_heartPics addObject:(NSString*)[result objectForKey:@"image"]];
         [_clothesPrices addObject:(NSString*)[result objectForKey:@"price"]];
-        [_clothesUrls addObject:(NSString*)[result objectForKey:@"productUrl"]];
+        [_clothesUrls addObject:(NSString*)[result objectForKey:@"purchaseUrl"]];
     }
 }
 

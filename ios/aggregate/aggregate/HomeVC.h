@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "MyCollectionViewController.h"
+#import "HeartsVC.h"
 
 
 @interface HomeVC : UIViewController

@@ -424,6 +424,11 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <size key="customSize" width="138" height="225"/>
+                                <connections>
+                                    <outlet property="imageView" destination="hm8-rZ-clh" id="95d-GA-0NK"/>
+                                    <outlet property="prodName" destination="dHA-7u-fSv" id="Nk3-Id-EzR"/>
+                                    <outlet property="prodPrice" destination="8yK-Ag-pE1" id="8dn-w6-mNj"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="SSE-R4-nH6">
@@ -509,6 +514,7 @@
                                 </view>
                                 <size key="customSize" width="138" height="225"/>
                                 <connections>
+                                    <outlet property="hearted" destination="M0H-Wd-SN5" id="UtO-N0-fZl"/>
                                     <outlet property="imageView" destination="uJa-MA-xsh" id="RuX-6v-O12"/>
                                     <outlet property="prodName" destination="5j7-mL-pAK" id="Wn8-NH-7XQ"/>
                                     <outlet property="prodPrice" destination="kgS-qK-7gw" id="uR3-Vw-J0d"/>

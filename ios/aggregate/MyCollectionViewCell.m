@@ -15,7 +15,8 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        // Initialization code
+        if (_hearted.selected) [_hearted setSelected:YES];
+        if (!_hearted.selected) [_hearted setSelected:NO];
     }
     return self;
 }
@@ -29,8 +30,6 @@
 }
 */
 
-- (NSString *) getClick {
-    return self.prodName.text;
-}
+
 
 @end

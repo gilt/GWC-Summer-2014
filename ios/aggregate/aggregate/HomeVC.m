@@ -67,21 +67,10 @@
     
     else if ([sender tag] == -1) { // user clicked hearts/faves button
         HeartsVC *hearts = [segue destinationViewController];
-        int favesnum;
-        
-        [hearts.heartPics removeAllObjects];
-        hearts.heartPics = [[NSMutableArray alloc] init];
-        [hearts.clothesNames removeAllObjects];
-        hearts.clothesNames = [[NSMutableArray alloc] init];
-        [hearts.clothesPrices removeAllObjects];
-        hearts.clothesPrices = [[NSMutableArray alloc] init];
-        [hearts.clothesUrls removeAllObjects];
-        hearts.clothesUrls = [[NSMutableArray alloc] init];
-        
-        [hearts setUpDisplay:[[NSUserDefaults standardUserDefaults]objectForKey:@"tops"] withDB:collection];
-        [hearts setUpDisplay:[[NSUserDefaults standardUserDefaults]objectForKey:@"dresses"] withDB:collection];
-        [hearts setUpDisplay:[[NSUserDefaults standardUserDefaults]objectForKey:@"skirts"] withDB:collection];
-        [hearts setUpDisplay:[[NSUserDefaults standardUserDefaults]objectForKey:@"pants"] withDB:collection];
+        MongoKeyedPredicate *predicate = [MongoKeyedPredicate predicate];
+        [predicate keyPath:@"hearted" matches:@(1)];
+        allclothes = [collection findWithPredicate:predicate error:&error];
+        [hearts setUpDisplay:allclothes];
         
     }
     
@@ -90,16 +79,12 @@
         MyCollectionViewController *SpecVC = [segue destinationViewController];
         if ([sender tag] == 1) {
             [predicate keyPath:@"category" matches:@"tops"];
-            [SpecVC.categories addObject:@"tops"];
         } if ([sender tag] == 2) {
             [predicate keyPath:@"category" matches:@"dresses"];
-            [SpecVC.categories addObject:@"dresses"];
         } if ([sender tag] == 3) {
             [predicate keyPath:@"category" matches:@"skirts"];
-            [SpecVC.categories addObject:@"skirts"];
         } if ([sender tag] == 4) {
             [predicate keyPath:@"category" matches:@"pants"];
-            [SpecVC.categories addObject:@"pants"];
         }
         
         allclothes = [collection findWithPredicate:predicate error:&error];

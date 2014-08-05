@@ -15,9 +15,10 @@
 @property (strong,nonatomic) NSMutableArray *clothesNames;
 @property (strong,nonatomic) NSMutableArray *clothesPrices;
 @property (strong,nonatomic) NSMutableArray *clothesUrls;
+@property (assign) int maxLoad;
 
 
-- (void)setUpDisplay:(NSArray *)clothesPics withDB:(MongoDBCollection*)collection;
+- (void)setUpDisplay:(NSArray *)allclothes;
 
 
 @end

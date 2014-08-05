@@ -31,19 +31,28 @@
     [sender setSelected:![sender isSelected]];
     CGPoint hitPoint = [sender convertPoint:CGPointZero toView:self.collectionView];
     NSIndexPath *hitIndex = [self.collectionView indexPathForItemAtPoint:hitPoint];
-    NSNumber *selected = [NSNumber numberWithInt:[hitIndex row]];
+    int selected = [hitIndex row];
     
-    // MyCollectionViewCell *clicked = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"MyCell" forIndexPath:hitIndex];
+    //set up database connection
+    NSError *error = nil;
+    MongoConnection *dbConn = [MongoConnection connectionForServer:@"kahana.mongohq.com:10025/gilt" error:&error];
+    [dbConn authenticate:@"gilt" username:@"francesca" password:@"harrison" error:&error];
+    MongoDBCollection *collection = [dbConn collectionWithName:@"gilt.products"];
+    
+    MongoKeyedPredicate *predicate = [MongoKeyedPredicate predicate];
+    [predicate keyPath:@"image" matches:_clothesPics[selected]];
+    MongoUpdateRequest *updateRequest = [MongoUpdateRequest updateRequestWithPredicate:predicate firstMatchOnly:NO];
     
     if ([sender isSelected]){ //if user just favorited the product
-        if ([_unfaves containsObject:selected]) [_unfaves removeObject:selected];
-        else [_faves addObject:selected];
+        [updateRequest keyPath:@"hearted" setValue:@(1)];
     }
     
     if (![sender isSelected]){ //if user just unfavorited the product
-        if ([_faves containsObject:selected]) [_faves removeObject:selected];
-        else [_unfaves addObject:selected];
+        [updateRequest keyPath:@"hearted" setValue:@(0)];
     }
+    
+    [collection updateWithRequest:updateRequest error:&error];
+    
 }
 
 - (void)setUpDBWithArray:(NSArray *)allclothes
@@ -57,11 +66,13 @@
     [_clothesNames removeAllObjects];
     [_clothesPics removeAllObjects];
     [_clothesPrices removeAllObjects];
+    [_clothesHearted removeAllObjects];
     
         // initially clear the product info arrays so that they are not infinitely appended to
     _clothesNames = [[NSMutableArray alloc] initWithCapacity:_maxLoad];
     _clothesPics = [[NSMutableArray alloc] initWithCapacity:_maxLoad];
     _clothesPrices = [[NSMutableArray alloc] initWithCapacity:_maxLoad];
+    _clothesHearted = [[NSMutableArray alloc] initWithCapacity:_maxLoad];
 
         // retrieve 14 items at a time, to display on the page
         // (FUTURE:) dynamically update arrays as the user scrolls, to conserve data storage/usage
@@ -69,15 +80,12 @@
     for (int i=0; i<_maxLoad; i++)
     {
         NSDictionary *result = [BSONDecoder decodeDictionaryWithDocument:[allclothes objectAtIndex:i]];
-        NSString *name = [result objectForKey:@"name"];
-        [_clothesNames addObject:name];
-        NSString *img = [result objectForKey:@"image"];
-        [_clothesPics addObject:img];
-        NSString *prix = [result objectForKey:@"price"];
-        [_clothesPrices addObject:prix];
-        NSURL *url = [result objectForKey:@"purchaseUrl"];
-        [_clothesUrls addObject:url];
+        [_clothesNames addObject:(NSString*)[result objectForKey:@"name"]];
+        [_clothesPics addObject:(NSString*)[result objectForKey:@"image"]];
+        [_clothesPrices addObject:(NSString*)[result objectForKey:@"price"]];
+        [_clothesUrls addObject:(NSString*)[result objectForKey:@"purchaseUrl"]];
         [_clothesCategories addObject:(NSString*)[result objectForKey:@"category"]];
+        [_clothesHearted addObject:(NSNumber*)[NSNumber numberWithBool:(bool)[result objectForKey:@"hearted"]]];
     }
     
 }
@@ -118,13 +126,9 @@
 
     myCell.prodName.text = _clothesNames[row];
     myCell.prodPrice.text = _clothesPrices[row];
+    [myCell.hearted setSelected:_clothesHearted[row]];
     
     return myCell;
-}
-
-- (void) addCategory:(NSString *)category
-{
-    [_categories addObject:category];
 }
 
 
@@ -137,38 +141,6 @@
 
 - (void)viewWillDisappear:(BOOL)animated
 {
-    NSLog(@"view will disappear");
-    
-    if ([_categories count]>1){
-        for (int x=0; x<[_faves count]; x++){
-            int pointer = [_faves[x] intValue];
-            if (![_categories containsObject:_clothesCategories[pointer]]) [_categories addObject:_clothesCategories[pointer]];
-        }
-        for (int y=0; y<[_unfaves count]; y++){
-            int pointer = [_faves[y] intValue];
-            if (![_categories containsObject:_clothesCategories[pointer]]) [_categories addObject:_clothesCategories[pointer]];
-        }
-    }
-    
-    for (NSString *category in _categories) {
-        NSMutableArray *merge = [(NSArray*)[[NSUserDefaults standardUserDefaults]arrayForKey:category] mutableCopy];
-        for (int k=0; k<[merge count]; k++){
-            for (int m=0; m<[_unfaves count]; m++){
-                if (merge[k]==_clothesPics[m]){
-                    [merge removeObjectAtIndex:k];
-                }
-            }
-        }
-        
-        for (int n=0; n<[_faves count]; n++){
-            int pointer = [_faves[n] intValue];
-            [merge addObject:_clothesPics[pointer]];
-        }
-        
-        [[NSUserDefaults standardUserDefaults]removeObjectForKey:category];
-        [[NSUserDefaults standardUserDefaults]setObject:merge forKey:category];
-        [[NSUserDefaults standardUserDefaults]synchronize];
-    }
     
 }
 

@@ -19,15 +19,11 @@
 @property (strong,nonatomic) NSMutableArray *clothesNames;
 @property (strong,nonatomic) NSMutableArray *clothesPrices;
 @property (strong,nonatomic) NSMutableArray *clothesUrls;
-@property (strong,nonatomic) NSMutableArray *clothesCategories;
-@property (strong,nonatomic) NSMutableArray *faves;
-@property (strong,nonatomic) NSMutableArray *unfaves;
-@property (strong,nonatomic) NSMutableArray *categories;
+@property (strong,nonatomic) NSMutableArray *clothesHearted;
 @property (assign) int maxLoad;
 
 
 - (IBAction)hearted:(id)sender;
 -(void)setUpDBWithArray:(NSArray *)allclothes;
-- (void) addCategory:(NSString *)category;
 
 @end
