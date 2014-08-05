@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "MyCollectionViewCell.h"
+#import "MyCollectionViewCell.h"
+#import "UIImageView+WebCache.h"
 
 
 @interface MyCollectionViewController : UICollectionViewController
@@ -16,11 +18,16 @@
 @property (strong,nonatomic) NSMutableArray *clothesPics;
 @property (strong,nonatomic) NSMutableArray *clothesNames;
 @property (strong,nonatomic) NSMutableArray *clothesPrices;
-@property (strong,nonatomic) NSMutableArray *allclothes;
+@property (strong,nonatomic) NSMutableArray *clothesUrls;
+@property (strong,nonatomic) NSMutableArray *clothesCategories;
+@property (strong,nonatomic) NSMutableArray *faves;
+@property (strong,nonatomic) NSMutableArray *unfaves;
+@property (strong,nonatomic) NSMutableArray *categories;
 @property (assign) int maxLoad;
-@property (assign) int maxView;
 
+
+- (IBAction)hearted:(id)sender;
 -(void)setUpDBWithArray:(NSArray *)allclothes;
-
+- (void) addCategory:(NSString *)category;
 
 @end

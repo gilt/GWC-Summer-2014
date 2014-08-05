@@ -9,6 +9,7 @@
 #import "HomeVC.h"
 #import "MyCollectionViewController.h"
 #import "ObjCMongoDB.h"
+#import "HeartsVC.h"
 
 @interface HomeVC ()
 
@@ -48,8 +49,6 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    MyCollectionViewController *SpecVC = [segue destinationViewController];
-    
     //set up database connection
     NSError *error = nil;
     MongoConnection *dbConn = [MongoConnection connectionForServer:@"kahana.mongohq.com:10025/gilt" error:&error];
@@ -58,48 +57,56 @@
     NSArray *allclothes;
     allclothes = [[NSArray alloc] init];
     
-    
         // first condition is always if the user selected "view all"
         // adjust if more categories are added!!
     if ([sender tag] == 5){
+        MyCollectionViewController *SpecVC = [segue destinationViewController];
         allclothes = [collection findAllWithError:&error];
         [SpecVC setUpDBWithArray:allclothes];
+    }
+    
+    else if ([sender tag] == -1) { // user clicked hearts/faves button
+        HeartsVC *hearts = [segue destinationViewController];
+        int favesnum;
         
-    } else {
+        [hearts.heartPics removeAllObjects];
+        hearts.heartPics = [[NSMutableArray alloc] init];
+        [hearts.clothesNames removeAllObjects];
+        hearts.clothesNames = [[NSMutableArray alloc] init];
+        [hearts.clothesPrices removeAllObjects];
+        hearts.clothesPrices = [[NSMutableArray alloc] init];
+        [hearts.clothesUrls removeAllObjects];
+        hearts.clothesUrls = [[NSMutableArray alloc] init];
+        
+        [hearts setUpDisplay:[[NSUserDefaults standardUserDefaults]objectForKey:@"tops"] withDB:collection];
+        [hearts setUpDisplay:[[NSUserDefaults standardUserDefaults]objectForKey:@"dresses"] withDB:collection];
+        [hearts setUpDisplay:[[NSUserDefaults standardUserDefaults]objectForKey:@"skirts"] withDB:collection];
+        [hearts setUpDisplay:[[NSUserDefaults standardUserDefaults]objectForKey:@"pants"] withDB:collection];
+        
+    }
+    
+    else {
         MongoKeyedPredicate *predicate = [MongoKeyedPredicate predicate];
-        
-        if ([sender tag] == 1)
-        {
+        MyCollectionViewController *SpecVC = [segue destinationViewController];
+        if ([sender tag] == 1) {
             [predicate keyPath:@"category" matches:@"tops"];
-        }
-        
-        if ([sender tag] == 2)
-        {
+            [SpecVC.categories addObject:@"tops"];
+        } if ([sender tag] == 2) {
             [predicate keyPath:@"category" matches:@"dresses"];
-        }
-        
-        if ([sender tag] == 3)
-        {
+            [SpecVC.categories addObject:@"dresses"];
+        } if ([sender tag] == 3) {
             [predicate keyPath:@"category" matches:@"skirts"];
-        }
-        
-        if ([sender tag] == 4)
-        {
+            [SpecVC.categories addObject:@"skirts"];
+        } if ([sender tag] == 4) {
             [predicate keyPath:@"category" matches:@"pants"];
+            [SpecVC.categories addObject:@"pants"];
         }
-        
         
         allclothes = [collection findWithPredicate:predicate error:&error];
         [SpecVC setUpDBWithArray:allclothes];
         
     }
-
-
 }
-
-
-
-
 
 
 @end

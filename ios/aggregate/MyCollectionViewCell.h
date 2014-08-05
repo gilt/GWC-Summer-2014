@@ -13,5 +13,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *prodName;
 @property (weak, nonatomic) IBOutlet UILabel *prodPrice;
 
+- (NSString *) getClick;
 
 @end

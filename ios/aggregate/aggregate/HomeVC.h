@@ -11,18 +11,7 @@
 
 
 @interface HomeVC : UIViewController
-//- (IBAction)topsU:(id)sender;
-//- (IBAction)dressesU:(id)sender;
-//- (IBAction)skirtsU:(id)sender;
-//- (IBAction)pantsU:(id)sender;
-//- (IBAction)allU:(id)sender;
-// - (IBAction)onButtonClick:(id)sender;
 
-
-
-// @property (assign) UIStoryboardSegue *segue;
-
-// - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender;
 
 
 

@@ -8,6 +8,7 @@
 
 #import "MyCollectionViewCell.h"
 
+
 @implementation MyCollectionViewCell
 
 - (id)initWithFrame:(CGRect)frame
@@ -27,5 +28,9 @@
     // Drawing code
 }
 */
+
+- (NSString *) getClick {
+    return self.prodName.text;
+}
 
 @end
