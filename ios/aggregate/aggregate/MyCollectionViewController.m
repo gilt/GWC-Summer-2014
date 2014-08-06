@@ -57,8 +57,6 @@
 
 - (void)setUpDBWithArray:(NSArray *)allclothes
 {
-    NSLog(@"i went into my collection vc class method");
-    
     _maxLoad = [allclothes count];
         // at all times, the app has stored product info (name, etc.) for 14 items
 
@@ -84,8 +82,8 @@
         [_clothesPics addObject:(NSString*)[result objectForKey:@"image"]];
         [_clothesPrices addObject:(NSString*)[result objectForKey:@"price"]];
         [_clothesUrls addObject:(NSString*)[result objectForKey:@"purchaseUrl"]];
-        [_clothesCategories addObject:(NSString*)[result objectForKey:@"category"]];
-        [_clothesHearted addObject:(NSNumber*)[NSNumber numberWithBool:(bool)[result objectForKey:@"hearted"]]];
+        [_clothesHearted addObject:(NSNumber*)[result objectForKey:@"hearted"]];
+        //NSLog(@"hearted is %@",[result objectForKey:@"hearted"]);
     }
     
 }
@@ -126,7 +124,8 @@
 
     myCell.prodName.text = _clothesNames[row];
     myCell.prodPrice.text = _clothesPrices[row];
-    [myCell.hearted setSelected:_clothesHearted[row]];
+    if ([_clothesHearted[row]boolValue]) [myCell.hearted setSelected:YES];
+    else [myCell.hearted setSelected:NO];
     
     return myCell;
 }
