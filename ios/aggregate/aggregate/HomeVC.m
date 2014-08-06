@@ -90,6 +90,10 @@
             [predicate keyPath:@"category" matches:@"skirts"];
         } if ([sender tag] == 4) {
             [predicate keyPath:@"category" matches:@"pants"];
+        } if ([sender tag] == 22) {
+            [predicate keyPath:@"category" matches:@"shorts"];
+        } if ([sender tag] == 23) {
+            [predicate keyPath:@"category" matches:@"swimwear"];
         }
         
         allclothes = [collection findWithPredicate:predicate error:&error];
