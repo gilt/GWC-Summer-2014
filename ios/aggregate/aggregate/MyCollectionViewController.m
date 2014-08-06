@@ -43,49 +43,54 @@
     [predicate keyPath:@"image" matches:_clothesPics[selected]];
     MongoUpdateRequest *updateRequest = [MongoUpdateRequest updateRequestWithPredicate:predicate firstMatchOnly:NO];
     
-    if ([sender isSelected]){ //if user just favorited the product
-        [updateRequest keyPath:@"hearted" setValue:@(1)];
-    }
-    
-    if (![sender isSelected]){ //if user just unfavorited the product
-        [updateRequest keyPath:@"hearted" setValue:@(0)];
-    }
+        //if user just favorited the product
+    if ([sender isSelected]) [updateRequest keyPath:@"hearted" setValue:@(1)];
+        //if user just unfavorited the product
+    if (![sender isSelected]) [updateRequest keyPath:@"hearted" setValue:@(0)];
     
     [collection updateWithRequest:updateRequest error:&error];
-    
 }
+
+
+- (IBAction)buyPressed:(id)sender {
+    CGPoint hitPoint = [sender convertPoint:CGPointZero toView:self.collectionView];
+    NSIndexPath *hitIndex = [self.collectionView indexPathForItemAtPoint:hitPoint];
+    int row = [hitIndex row];
+    NSURL *url = [[NSURL alloc] initWithString:_clothesUrls[row]];
+    
+    [[UIApplication sharedApplication] openURL:url];
+}
+
 
 - (void)setUpDBWithArray:(NSArray *)allclothes
 {
     _maxLoad = [allclothes count];
         // at all times, the app has stored product info (name, etc.) for 14 items
-
     
     [_clothesNames removeAllObjects];
     [_clothesPics removeAllObjects];
     [_clothesPrices removeAllObjects];
     [_clothesHearted removeAllObjects];
+    [_clothesUrls removeAllObjects];
     
         // initially clear the product info arrays so that they are not infinitely appended to
     _clothesNames = [[NSMutableArray alloc] initWithCapacity:_maxLoad];
     _clothesPics = [[NSMutableArray alloc] initWithCapacity:_maxLoad];
     _clothesPrices = [[NSMutableArray alloc] initWithCapacity:_maxLoad];
     _clothesHearted = [[NSMutableArray alloc] initWithCapacity:_maxLoad];
+    _clothesUrls = [[NSMutableArray alloc] initWithCapacity:_maxLoad];
 
         // retrieve 14 items at a time, to display on the page
         // (FUTURE:) dynamically update arrays as the user scrolls, to conserve data storage/usage
     
-    for (int i=0; i<_maxLoad; i++)
-    {
+    for (int i=0; i<_maxLoad; i++) {
         NSDictionary *result = [BSONDecoder decodeDictionaryWithDocument:[allclothes objectAtIndex:i]];
         [_clothesNames addObject:(NSString*)[result objectForKey:@"name"]];
         [_clothesPics addObject:(NSString*)[result objectForKey:@"image"]];
         [_clothesPrices addObject:(NSString*)[result objectForKey:@"price"]];
         [_clothesUrls addObject:(NSString*)[result objectForKey:@"purchaseUrl"]];
         [_clothesHearted addObject:(NSNumber*)[result objectForKey:@"hearted"]];
-        //NSLog(@"hearted is %@",[result objectForKey:@"hearted"]);
     }
-    
 }
 
 

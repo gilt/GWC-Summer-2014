@@ -19,6 +19,7 @@
 
 
 - (void)setUpDisplay:(NSArray *)allclothes;
+- (IBAction)hearted:(id)sender;
 
 
 @end

@@ -11,6 +11,7 @@
 #import "UIImageView+WebCache.h"
 
 
+
 @interface HeartsVC ()
 
 @end
@@ -25,6 +26,39 @@
     }
     return self;
 }
+
+
+- (IBAction)hearted:(id)sender {
+    [sender setSelected:![sender isSelected]];
+    CGPoint hitPoint = [sender convertPoint:CGPointZero toView:self.collectionView];
+    NSIndexPath *hitIndex = [self.collectionView indexPathForItemAtPoint:hitPoint];
+    int selected = [hitIndex row];
+    
+    //set up database connection
+    NSError *error = nil;
+    MongoConnection *dbConn = [MongoConnection connectionForServer:@"kahana.mongohq.com:10025/gilt" error:&error];
+    [dbConn authenticate:@"gilt" username:@"francesca" password:@"harrison" error:&error];
+    MongoDBCollection *collection = [dbConn collectionWithName:@"gilt.products"];
+    
+    MongoKeyedPredicate *predicate = [MongoKeyedPredicate predicate];
+    [predicate keyPath:@"image" matches:_heartPics[selected]];
+    MongoUpdateRequest *updateRequest = [MongoUpdateRequest updateRequestWithPredicate:predicate firstMatchOnly:NO];
+    
+    if (![sender isSelected]){ //if user just unfavorited the product
+        [updateRequest keyPath:@"hearted" setValue:@(0)];
+    }
+    
+    [collection updateWithRequest:updateRequest error:&error];
+    
+    [_heartPics removeObjectAtIndex:selected];
+    [_clothesNames removeObjectAtIndex:selected];
+    [_clothesPrices removeObjectAtIndex:selected];
+    [_clothesUrls removeObjectAtIndex:selected];
+    
+    [self loadView];
+    
+}
+
 
 - (void)setUpDisplay:(NSArray *)allclothes
 {
@@ -80,6 +114,7 @@
     
     myCell.prodName.text = _clothesNames[row];
     myCell.prodPrice.text = _clothesPrices[row];
+    [myCell.hearted setSelected:YES];
     
     return myCell;
 }

@@ -432,11 +432,24 @@
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16z-f4-lVI">
+                                            <rect key="frame" x="93" y="139" width="21" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <state key="normal" backgroundImage="hearts.png">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <state key="selected" backgroundImage="redheart.png"/>
+                                            <connections>
+                                                <action selector="hearted:" destination="zH3-Mj-BEw" eventType="touchUpInside" id="DbL-0A-5iD"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <size key="customSize" width="138" height="225"/>
                                 <connections>
+                                    <outlet property="hearted" destination="16z-f4-lVI" id="yK4-KO-b71"/>
                                     <outlet property="imageView" destination="hm8-rZ-clh" id="95d-GA-0NK"/>
                                     <outlet property="prodName" destination="dHA-7u-fSv" id="Nk3-Id-EzR"/>
                                     <outlet property="prodPrice" destination="8yK-Ag-pE1" id="8dn-w6-mNj"/>
@@ -640,6 +653,21 @@
                                                 <action selector="hearted:" destination="92m-hL-rwC" eventType="touchUpInside" id="sXc-2D-k9G"/>
                                             </connections>
                                         </button>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7VU-vU-SwR">
+                                            <rect key="frame" x="6" y="5" width="30" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                            <accessibility key="accessibilityConfiguration">
+                                                <accessibilityTraits key="traits" none="YES" button="YES" link="YES"/>
+                                            </accessibility>
+                                            <color key="tintColor" red="0.62907608699999995" green="0.01723595306" blue="0.55363292559999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <state key="normal" title="Buy">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="buyPressed:" destination="92m-hL-rwC" eventType="touchUpInside" id="2d4-C0-Mo8"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
@@ -694,7 +722,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="sXT-FX-0F1"/>
+        <segue reference="QQC-TS-PWM"/>
         <segue reference="nRF-Au-Ags"/>
     </inferredMetricsTieBreakers>
 </document>
