@@ -57,21 +57,14 @@
         MongoKeyedPredicate *predicate = [MongoKeyedPredicate predicate];
         MyCollectionViewController *SpecVC = [segue destinationViewController];
     
-        if ([sender tag] == 6) {
-            [predicate keyPath:@"store" matches:@"ShopBop"];
-        } if ([sender tag] == 7) {
-            [predicate keyPath:@"store" matches:@"Saks"];
-        } if ([sender tag] == 8) {
-            [predicate keyPath:@"store" matches:@"Gilt"];
-          if([sender tag] == 9) {
-            [predicate keyPath:@"store" matches:@"American Eagle Outfitters"];
-        }
-        } if ([sender tag] == 11) {
-            [predicate keyPath:@"store" matches:@"NastyGal"];
-        }
-        if([sender tag] == 10) {
-            [predicate keyPath:@"store" matches:@"Lulus"];
-        }
+        if ([sender tag] == 6) [predicate keyPath:@"store" matches:@"ShopBop"];
+        if ([sender tag] == 7) [predicate keyPath:@"store" matches:@"Saks"];
+        if ([sender tag] == 8) [predicate keyPath:@"store" matches:@"Gilt"];
+        if([sender tag] == 9) [predicate keyPath:@"store" matches:@"ae"];
+        if ([sender tag] == 11) [predicate keyPath:@"store" matches:@"NastyGal"];
+        if([sender tag] == 10) [predicate keyPath:@"store" matches:@"Lulus"];
+        if([sender tag] == 13) [predicate keyPath:@"store" matches:@"Forever21"];
+    
         
         allclothes = [collection findWithPredicate:predicate error:&error];
         [SpecVC setUpDBWithArray:allclothes];

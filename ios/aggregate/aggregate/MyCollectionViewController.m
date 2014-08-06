@@ -126,7 +126,6 @@
     int row = [indexPath row];
     [myCell.imageView sd_setImageWithURL:[NSURL URLWithString:[_clothesPics objectAtIndex:row]]
                          placeholderImage:[UIImage imageNamed:@"placeholder.png"]];
-
     myCell.prodName.text = _clothesNames[row];
     myCell.prodPrice.text = _clothesPrices[row];
     [myCell.hearted setSelected:[_clothesHearted[row]boolValue]];
