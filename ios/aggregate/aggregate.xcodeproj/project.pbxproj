@@ -40,6 +40,7 @@
 		5ABF1E94198FE521002AD36A /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ABF1E93198FE521002AD36A /* placeholder.png */; };
 		5ABF1E96198FF2E2002AD36A /* redheart.png in Resources */ = {isa = PBXBuildFile; fileRef = 5ABF1E95198FF2E2002AD36A /* redheart.png */; };
 		5ABF1E99198FF3CD002AD36A /* HeartsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ABF1E98198FF3CD002AD36A /* HeartsVC.m */; };
+		5ABF1E9C19927DDE002AD36A /* StoresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ABF1E9B19927DDE002AD36A /* StoresViewController.m */; };
 		5AD5235E197851E800DCA331 /* tops.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5AD5235D197851E800DCA331 /* tops.jpg */; };
 		5AD52360197856B600DCA331 /* dresses.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5AD5235F197856B600DCA331 /* dresses.jpg */; };
 		5AD5236219785E1000DCA331 /* skirts.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5AD5236119785E1000DCA331 /* skirts.jpg */; };
@@ -153,6 +154,8 @@
 		5ABF1E95198FF2E2002AD36A /* redheart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = redheart.png; sourceTree = SOURCE_ROOT; };
 		5ABF1E97198FF3CD002AD36A /* HeartsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeartsVC.h; sourceTree = "<group>"; };
 		5ABF1E98198FF3CD002AD36A /* HeartsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeartsVC.m; sourceTree = "<group>"; };
+		5ABF1E9A19927DDE002AD36A /* StoresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StoresViewController.h; path = "../../../../../Downloads/sort by store/aggregate/StoresViewController.h"; sourceTree = "<group>"; };
+		5ABF1E9B19927DDE002AD36A /* StoresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StoresViewController.m; path = "../../../../../Downloads/sort by store/aggregate/StoresViewController.m"; sourceTree = "<group>"; };
 		5AD5235D197851E800DCA331 /* tops.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tops.jpg; sourceTree = SOURCE_ROOT; };
 		5AD5235F197856B600DCA331 /* dresses.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = dresses.jpg; sourceTree = SOURCE_ROOT; };
 		5AD5236119785E1000DCA331 /* skirts.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = skirts.jpg; sourceTree = SOURCE_ROOT; };
@@ -313,6 +316,8 @@
 				5AD525DC197ED48A00DCA331 /* MyCollectionViewCell.m */,
 				5ABF1E97198FF3CD002AD36A /* HeartsVC.h */,
 				5ABF1E98198FF3CD002AD36A /* HeartsVC.m */,
+				5ABF1E9A19927DDE002AD36A /* StoresViewController.h */,
+				5ABF1E9B19927DDE002AD36A /* StoresViewController.m */,
 				5ABF1E44198FE419002AD36A /* UIImageView+WebCache.h */,
 				5AD525D3197EC9BE00DCA331 /* tops1.jpg */,
 				5AD525D4197EC9BE00DCA331 /* tops2.jpg */,
@@ -653,6 +658,7 @@
 				5AD525C1197D859E00DCA331 /* MongoConnection+Diagnostics.m in Sources */,
 				5AD525BD197D859E00DCA331 /* NSManagedObject+BSONCoding.m in Sources */,
 				5ABF1E99198FF3CD002AD36A /* HeartsVC.m in Sources */,
+				5ABF1E9C19927DDE002AD36A /* StoresViewController.m in Sources */,
 				5ABF1E78198FE41A002AD36A /* UIImageView+HighlightedWebCache.m in Sources */,
 				5AD525BA197D859E00DCA331 /* BSONTypes.m in Sources */,
 				5ABF1E6C198FE41A002AD36A /* NSData+ImageContentType.m in Sources */,

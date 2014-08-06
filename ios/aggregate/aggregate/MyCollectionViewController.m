@@ -124,8 +124,7 @@
 
     myCell.prodName.text = _clothesNames[row];
     myCell.prodPrice.text = _clothesPrices[row];
-    if ([_clothesHearted[row]boolValue]) [myCell.hearted setSelected:YES];
-    else [myCell.hearted setSelected:NO];
+    [myCell.hearted setSelected:[_clothesHearted[row]boolValue]];
     
     return myCell;
 }

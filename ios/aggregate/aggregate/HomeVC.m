@@ -65,6 +65,11 @@
         [SpecVC setUpDBWithArray:allclothes];
     }
     
+    else if ([sender tag] == 20) {
+        StoresViewController *StoresVC;
+        StoresVC = [segue destinationViewController];
+    }
+    
     else if ([sender tag] == -1) { // user clicked hearts/faves button
         HeartsVC *hearts = [segue destinationViewController];
         MongoKeyedPredicate *predicate = [MongoKeyedPredicate predicate];

@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "MyCollectionViewController.h"
 #import "HeartsVC.h"
+#import "StoresViewController.h"
 
 
 @interface HomeVC : UIViewController
